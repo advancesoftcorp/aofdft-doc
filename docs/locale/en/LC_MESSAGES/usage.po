@@ -1,0 +1,1703 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, AdvanceSoft Corporation
+# This file is distributed under the same license as the Advance/OF-DFT
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Advance/OF-DFT \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-30 18:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../usage.rst:5
+msgid "使用方法"
+msgstr "Usage"
+
+#: ../../usage/aodftcalculator_class.rst:5
+msgid "AOFDFTCalculator"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:7
+msgid ":py:class:`aofdft.calculator.AOFDFTCalculator` クラスの説明です。"
+msgstr "Description of the :py:class:`aofdft.calculator.AOFDFTCalculator` class."
+
+#: ../../usage/aodftcalculator_class.rst:9
+msgid ""
+"継承元のCalculatorクラスについては\\ `ASEのドキュメント <https://ase-"
+"lib.org/development/calculators.html>`_\\ を参照してください。"
+msgstr ""
+"Please refer to the `ASE documentation <https://ase-"
+"lib.org/development/calculators.html>`_ for the base Calculator class."
+
+#: ../../usage/aodftcalculator_class.rst:14
+msgid "コンストラクタの引数"
+msgstr "Constructor arguments"
+
+#: ../../usage/aodftcalculator_class.rst:16
+msgid ":py:class:`AOFDFTCalculator` オブジェクト作成時に指定する引数です。"
+msgstr ""
+"These are the arguments specified when creating an "
+":py:class:`AOFDFTCalculator` object."
+
+#: ../../usage/aodftcalculator_class.rst:18
+msgid ""
+"calculator = AOFDFTCalculator(kin_type=\"AS25\", "
+"kin_model=\"AdvanceSoft25-80Ry-ft\", xc=\"LDA\")"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:25
+msgid "一般・入出力関連"
+msgstr "General and Input/Output related"
+
+#: ../../usage/aodftcalculator_class.rst
+msgid "type"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:29
+#: ../../usage/aodftcalculator_class.rst:106
+#: ../../usage/aodftcalculator_class.rst:113
+#: ../../usage/aodftcalculator_class.rst:120
+#: ../../usage/aodftcalculator_class.rst:127
+#: ../../usage/aodftcalculator_class.rst:199
+#: ../../usage/aodftcalculator_class.rst:239
+#: ../../usage/aodftcalculator_class.rst:425
+msgid "bool"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst ../../usage/calculator.rst
+#: ../../usage/data_generator.rst ../../usage/trainer.rst
+msgid "デフォルト"
+msgstr "default"
+
+#: ../../usage/aodftcalculator_class.rst:30
+#: ../../usage/aodftcalculator_class.rst:107
+#: ../../usage/aodftcalculator_class.rst:200
+#: ../../usage/aodftcalculator_class.rst:240
+msgid "True"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:32
+msgid "コンソールにログを出力するかどうかの設定です。"
+msgstr "Setting for whether to output logs to the console."
+
+#: ../../usage/aodftcalculator_class.rst:36
+#: ../../usage/aodftcalculator_class.rst:185
+#: ../../usage/aodftcalculator_class.rst:192
+#: ../../usage/aodftcalculator_class.rst:302
+#: ../../usage/aodftcalculator_class.rst:337
+msgid "int"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:37
+msgid "logging.INFO"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:39
+msgid "ログレベルの設定です。logging.DEBUG、logging.INFO、logging.WARNING、logging.ERROR、logging.CRITICALが指定できます。"
+msgstr ""
+"Setting for the log level. logging.DEBUG, logging.INFO, logging.WARNING, "
+"logging.ERROR, and logging.CRITICAL can be specified."
+
+#: ../../usage/aodftcalculator_class.rst:43
+#: ../../usage/aodftcalculator_class.rst:50
+#: ../../usage/aodftcalculator_class.rst:57
+#: ../../usage/aodftcalculator_class.rst:211
+#: ../../usage/aodftcalculator_class.rst:255
+#: ../../usage/aodftcalculator_class.rst:316
+#: ../../usage/aodftcalculator_class.rst:344
+msgid "None|str"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:44
+#: ../../usage/aodftcalculator_class.rst:51
+#: ../../usage/aodftcalculator_class.rst:58
+#: ../../usage/aodftcalculator_class.rst:153
+#: ../../usage/aodftcalculator_class.rst:172
+#: ../../usage/aodftcalculator_class.rst:352 ../../usage/calculator.rst:47
+msgid "None"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:46
+msgid "ログファイル名です。Noneに設定するとログをファイルに出力しません。"
+msgstr "Name of the log file. If set to None, logs will not be written to a file."
+
+#: ../../usage/aodftcalculator_class.rst:53
+#: ../../usage/aodftcalculator_class.rst:60
+msgid "原子ごとの軌道占有数を出力するファイル名です。Noneに設定すると出力しません。"
+msgstr ""
+"Name of the file to output orbital occupation numbers for each atom. If "
+"set to None, no output is generated."
+
+#: ../../usage/aodftcalculator_class.rst:64
+#: ../../usage/aodftcalculator_class.rst:71
+#: ../../usage/aodftcalculator_class.rst:232
+#: ../../usage/aodftcalculator_class.rst:246
+#: ../../usage/aodftcalculator_class.rst:283
+#: ../../usage/aodftcalculator_class.rst:323
+msgid "str"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:65
+#: ../../usage/aodftcalculator_class.rst:72
+msgid "DFT_DATA19/VPS"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:67
+msgid "擬ポテンシャル(VPS)ファイルのあるフォルダ名です。"
+msgstr "Name of the folder containing pseudopotential (VPS) files."
+
+#: ../../usage/aodftcalculator_class.rst:74
+msgid "擬原子軌道(PAO)ファイルのあるフォルダ名です。"
+msgstr "Name of the folder containing Pseudo Atomic Orbital (PAO) files."
+
+#: ../../usage/aodftcalculator_class.rst:78
+#: ../../usage/aodftcalculator_class.rst:85
+#: ../../usage/aodftcalculator_class.rst:92
+#: ../../usage/aodftcalculator_class.rst:99
+msgid "dict[str]"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:79
+msgid "aofdft.calculator.default_files.VPS_GGA"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:81
+msgid "元素ごとの擬ポテンシャルをVPSファイル名で指定します。ゴースト原子にはNoneを指定します。"
+msgstr ""
+"Specifies the pseudopotential for each element using the VPS file name. "
+"Specify None for ghost atoms."
+
+#: ../../usage/aodftcalculator_class.rst:86
+msgid "aofdft.calculator.default_files.PAO_AUGMENT3SP"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:88
+msgid ""
+"元素ごとの擬原子軌道をPAOファイル名で指定します。 :py:mod:`aofdft.calculator.default_files` "
+"にプリセットが定義されています。"
+msgstr ""
+"Specifies the Pseudo Atomic Orbitals for each element using the PAO file "
+"name. Presets are defined in :py:mod:`aofdft.calculator.default_files` ."
+
+#: ../../usage/aodftcalculator_class.rst:93
+msgid "aofdft.calculator.default_files.BASIS_AUGMENT3SP"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:95
+msgid ""
+"元素ごとのPAO基底関数の割り当てを示すラベル（例：\"s1p1\"、\"s2p2d1\"）です。 "
+":py:mod:`aofdft.calculator.default_files` にプリセットが定義されています。"
+msgstr ""
+"Labels indicating the assignment of PAO basis functions for each element "
+"(e.g., \"s1p1\", \"s2p2d1\"). Presets are defined in "
+":py:mod:`aofdft.calculator.default_files` ."
+
+#: ../../usage/aodftcalculator_class.rst:100
+msgid "aofdft.calculator.default_files.SEMI_CORES_DEFAULT"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:102
+msgid "元素ごとのセミコアを示すラベル（例：\"s1\"、\"p1\"、\"s1p1\"）です。"
+msgstr ""
+"Labels indicating the semi-core for each element (e.g., \"s1\", \"p1\", "
+"\"s1p1\")."
+
+#: ../../usage/aodftcalculator_class.rst:109
+msgid ""
+"SCF計算後に各原子の電荷・スピンを計算するかどうかの設定です。それぞれ atoms.arrays[\"charge\"] 、 "
+"atoms.arrays[\"spin\"] として取得できます。"
+msgstr ""
+"Setting for whether to calculate the charge and spin of each atom after "
+"the SCF calculation. These can be retrieved as atoms.arrays[\"charge\"] "
+"and atoms.arrays[\"spin\"], respectively."
+
+#: ../../usage/aodftcalculator_class.rst:114
+#: ../../usage/aodftcalculator_class.rst:121
+#: ../../usage/aodftcalculator_class.rst:128
+msgid "False"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:116
+msgid "SCF計算が収束しない場合に例外(:py:exc:`RuntimeError`)を発生させるかどうかの設定です。"
+msgstr ""
+"Setting for whether to raise an exception (:py:exc:`RuntimeError`) if the"
+" SCF calculation does not converge."
+
+#: ../../usage/aodftcalculator_class.rst:123
+msgid "Smearingに由来する自由エネルギーの低下分（エントロピー補正） :math:`-TS` を全エネルギーに対し適用するかどうかの設定です。"
+msgstr ""
+"Setting for whether to apply the free energy decrease (entropy "
+"correction) :math:`-TS` due to smearing to the total energy."
+
+#: ../../usage/aodftcalculator_class.rst:130
+msgid ""
+"原子近傍で運動エネルギー汎関数の重みを小さくする手法(Split-Kinetic-Energy)を使っている場合に"
+"、運動エネルギーの出力では一時的にSplit-Kinetic-"
+"Energyを無効にする（重みのない元の汎関数だけを使って計算する）かどうかの設定です。"
+msgstr ""
+"Setting for whether to temporarily disable Split-Kinetic-Energy "
+"(calculate using only the original functional without weighting) in the "
+"kinetic energy output when using the Split-Kinetic-Energy method, which "
+"reduces the weight of the kinetic energy functional near atoms."
+
+#: ../../usage/aodftcalculator_class.rst:134
+#: ../../usage/aodftcalculator_class.rst:164
+#: ../../usage/aodftcalculator_class.rst:178
+#: ../../usage/aodftcalculator_class.rst:225
+#: ../../usage/aodftcalculator_class.rst:262
+#: ../../usage/aodftcalculator_class.rst:269
+#: ../../usage/aodftcalculator_class.rst:276
+#: ../../usage/aodftcalculator_class.rst:290
+#: ../../usage/aodftcalculator_class.rst:309
+#: ../../usage/aodftcalculator_class.rst:330
+#: ../../usage/aodftcalculator_class.rst:389
+#: ../../usage/aodftcalculator_class.rst:395
+#: ../../usage/aodftcalculator_class.rst:401
+#: ../../usage/aodftcalculator_class.rst:407
+#: ../../usage/aodftcalculator_class.rst:413
+#: ../../usage/aodftcalculator_class.rst:419
+#: ../../usage/aodftcalculator_class.rst:431
+#: ../../usage/aodftcalculator_class.rst:437
+msgid "float"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:135
+msgid "0.05"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:137
+msgid "同じCalculatorオブジェクトで複数のDFT計算を行う場合（MDなど）、セル変形の指標がこの値より大きければFFTグリッドを再定義します。"
+msgstr ""
+"When performing multiple DFT calculations with the same Calculator object"
+" (e.g., MD), the FFT grid is redefined if the cell deformation metric is "
+"greater than this value."
+
+#: ../../usage/aodftcalculator_class.rst:139
+#, python-brace-format
+msgid ""
+"変形の指標は、初回または前回更新時のセル行列を :math:`A_\\mathrm{old}` 、現在のセル行列を "
+":math:`A_\\mathrm{new}` として :math:`A_\\mathrm{new}A_\\mathrm{old}^{-1} - "
+"I` の全成分の2乗和の平方根です。"
+msgstr ""
+"The deformation metric is the square root of the sum of squares of all "
+"components of :math:`A_\\mathrm{new}A_\\mathrm{old}^{-1} - I` , where "
+":math:`A_\\mathrm{old}` is the cell matrix at the initial or previous "
+"update and :math:`A_\\mathrm{new}` is the current cell matrix."
+
+#: ../../usage/aodftcalculator_class.rst:143
+msgid "str|torch.device"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:144 ../../usage/calculator.rst:41
+msgid "cpu"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:146
+msgid "PyTorchの計算を行うデバイスの設定です。GPUを使用するには\"cuda\"を指定します。"
+msgstr ""
+"Setting for the device used for PyTorch calculations. Specify \"cuda\" to"
+" use a GPU."
+
+#: ../../usage/aodftcalculator_class.rst:148 ../../usage/train_yml.rst:19
+msgid ""
+"複数のGPUがある環境で使用するGPUを指定するには、 ``nvidia-smi -L`` "
+"でデバイスIDを取得し、\"cuda:0\"、\"cuda:1\"のように指定します。"
+msgstr ""
+"To specify the GPU to use in an environment with multiple GPUs, obtain "
+"the device ID using ``nvidia-smi -L`` and specify it like \"cuda:0\" or "
+"\"cuda:1\"."
+
+#: ../../usage/aodftcalculator_class.rst:152
+msgid "None|int"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:155 ../../usage/calculator.rst:49
+msgid ""
+"PyTorchのOpenMP(CPU)スレッド並列数です。Noneの場合、環境変数 :envvar:`OMP_NUM_THREADS` "
+"の値を使います。"
+msgstr ""
+"Number of OpenMP (CPU) threads for PyTorch. If None, the value of the "
+"environment variable :envvar:`OMP_NUM_THREADS` is used."
+
+#: ../../usage/aodftcalculator_class.rst:160
+msgid "AtomicData関連"
+msgstr "AtomicData related"
+
+#: ../../usage/aodftcalculator_class.rst:165
+msgid "0.0"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:167
+msgid "系の正味の電荷です。系が全体としてイオン化している場合に設定します。"
+msgstr "Net charge of the system. Set this if the system is ionized as a whole."
+
+#: ../../usage/aodftcalculator_class.rst:171
+msgid "float|None"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:174
+msgid "系の正味のスピン偏極です。スピンあり(collinear)の計算で、スピン偏極を固定する場合に指定します。Noneを指定すると固定しません。"
+msgstr ""
+"Net spin polarization of the system. Specify this to fix the spin "
+"polarization in spin-polarized (collinear) calculations. If set to None, "
+"it is not fixed."
+
+#: ../../usage/aodftcalculator_class.rst:179
+msgid "60.0 / Bohr"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:181
+msgid "逆空間の動径グリッドの最大値(1/Angstrom)の設定です。"
+msgstr ""
+"Setting for the maximum value of the radial grid in reciprocal space "
+"(1/Angstrom)."
+
+#: ../../usage/aodftcalculator_class.rst:186
+#: ../../usage/aodftcalculator_class.rst:193
+msgid "1001"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:188
+msgid "逆空間の動径グリッドのグリッド数の設定です。"
+msgstr ""
+"Setting for the number of grid points of the radial grid in reciprocal "
+"space."
+
+#: ../../usage/aodftcalculator_class.rst:195
+msgid "実空間の動径グリッドのグリッド数の設定です。"
+msgstr "Setting for the number of grid points of the radial grid in real space."
+
+#: ../../usage/aodftcalculator_class.rst:202
+msgid ""
+":math:`j`\\ 依存型擬ポテンシャルのプロジェクターを、\\ :math:`j`\\ "
+"の縮退度を重みとして平均化することで、半相対論的（スカラー相対論的）擬ポテンシャルに変換するかどうかの設定です。False（DFT+U、スピン軌道相互作用）は未実装です。"
+msgstr ""
+"Setting for whether to convert :math:`j`\\ -dependent pseudopotential "
+"projectors into semi-relativistic (scalar-relativistic) pseudopotentials "
+"by averaging them using the degeneracy of :math:`j` as weights. False "
+"(DFT+U, spin-orbit coupling) is not implemented."
+
+#: ../../usage/aodftcalculator_class.rst:207
+msgid "DFT関連"
+msgstr "DFT related"
+
+#: ../../usage/aodftcalculator_class.rst:212 ../../usage/calculator.rst:53
+msgid "non-polarized"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:214
+msgid ""
+"スピンを考慮した計算を行うかどうかの設定です。Noneまたは\"non-"
+"polarized\"でスピン偏極なし、\"polarized\"でスピン偏極あり(collinear)、\"non-"
+"collinear\"（未実装）でノンコリニア(非共線的)磁性の計算を行います。"
+msgstr ""
+"Setting for whether to perform calculations considering spin. Specify "
+"None or \"non-polarized\" for non-spin-polarized, \"polarized\" for spin-"
+"polarized (collinear), and \"non-collinear\" (not implemented) for non-"
+"collinear magnetic calculations."
+
+#: ../../usage/aodftcalculator_class.rst:218
+msgid "int|tuple[int]|list[int]|torch.Tensor[int]"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:219
+msgid "e_cutを元に設定"
+msgstr "Set based on e_cut"
+
+#: ../../usage/aodftcalculator_class.rst:221
+msgid ""
+"電子密度のグリッド数の設定です。a、b、c方向のグリッド数を[na, nb, "
+"nc]のように指定します。intの場合各方向に同じグリッド数を設定します。"
+msgstr ""
+"Setting for the number of grid points for the charge density. Specify the"
+" number of grid points in the a, b, and c directions as [na, nb, nc]. If "
+"an int is provided, the same number of grid points is set for each "
+"direction."
+
+#: ../../usage/aodftcalculator_class.rst:226 ../../usage/calculator.rst:59
+msgid "75.0 * Hartree"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:228 ../../usage/calculator.rst:61
+msgid "電子密度のカットオフエネルギー(eV)です。"
+msgstr "Cutoff energy for the charge density (eV)."
+
+#: ../../usage/aodftcalculator_class.rst:233
+msgid "PBE"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:235
+msgid "交換相関汎関数の種類です。\"LDA\"、\"PBE\"が指定できます。"
+msgstr ""
+"Type of exchange-correlation functional. \"LDA\" and \"PBE\" can be "
+"specified."
+
+#: ../../usage/aodftcalculator_class.rst:242
+msgid "交換相関汎関数の計算で部分内殻補正(Partial Core Correction, PCC)を使うかどうかの設定です。"
+msgstr ""
+"Setting for whether to use Partial Core Correction (PCC) in the "
+"calculation of the exchange-correlation functional."
+
+#: ../../usage/aodftcalculator_class.rst:247 ../../usage/calculator.rst:29
+msgid "AS25"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:249
+msgid ""
+"運動エネルギー汎関数を指定します。\"AS25\"でAdvanceSoft25汎関数を使用します。従来の汎関数として\"TFvW"
+"\"(Thomas-Fermi-von Weizsäcker)、\"LKT\"(Luo-Karasiev-Trickey)が使えます。"
+msgstr ""
+"Specifies the kinetic energy functional. Specify \"AS25\" to use the "
+"AdvanceSoft25 functional. \"TFvW\" (Thomas-Fermi-von Weizsäcker) and "
+"\"LKT\" (Luo-Karasiev-Trickey) are available as conventional functionals."
+
+#: ../../usage/aodftcalculator_class.rst:251
+msgid "TFvWを使う場合、TFに対するvWの割合を\"TF1/5vW\"、\"TF0.8vW\"のように指定できます。割合を指定せず、かつkin_coef_tf、kin_coef_vwを指定しない場合は\"TF1/5vW\"となります。\"TF\"、\"vW\"のみも指定できます。"
+msgstr ""
+"When using TFvW, you can specify the ratio of vW to TF like \"TF1/5vW\" "
+"or \"TF0.8vW\". If the ratio is not specified and neither kin_coef_tf nor"
+" kin_coef_vw are specified, it defaults to \"TF1/5vW\". You can also "
+"specify just \"TF\" or \"vW\"."
+
+#: ../../usage/aodftcalculator_class.rst:256 ../../usage/calculator.rst:35
+msgid "AdvanceSoft25-80Ry-ft"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:258
+msgid ""
+"AdvanceSoft25汎関数を使う場合、そのモデルを指定します。学習済みモデルは "
+":file:`aofdft/deepkin/pretrained` にあります。学習済みモデルはファイル名のみ（拡張子なし）で指定できます。"
+msgstr ""
+"Specifies the model when using the AdvanceSoft25 functional. Pretrained "
+"models are located in :file:`aofdft/deepkin/pretrained` . Pretrained "
+"models can be specified by file name only (without extension)."
+
+#: ../../usage/aodftcalculator_class.rst:263
+#: ../../usage/aodftcalculator_class.rst:277
+msgid "1.0"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:265
+msgid "TFvW汎関数を使う場合のTFの係数です。"
+msgstr "Coefficient for TF when using the TFvW functional."
+
+#: ../../usage/aodftcalculator_class.rst:270
+#: ../../usage/aodftcalculator_class.rst:331
+msgid "0.2"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:272
+msgid "TFvW汎関数を使う場合のvWの係数です。"
+msgstr "Coefficient for vW when using the TFvW functional."
+
+#: ../../usage/aodftcalculator_class.rst:279
+msgid "運動エネルギー汎関数に適用するスケーリング係数です。"
+msgstr "Scaling coefficient applied to the kinetic energy functional."
+
+#: ../../usage/aodftcalculator_class.rst:284
+msgid "gauss"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:286
+msgid ""
+"Smearingの方法を設定します。\"gauss\"(ガウス関数)、\"m-p\"(Methfessel-Paxton)、\"m-v"
+"\"(Marzari-Vanderbilt)、\"fermi\"(Fermi-Dirac)が指定できます。"
+msgstr ""
+"Setting for the smearing method. \"gauss\" (Gaussian function), \"m-p\" "
+"(Methfessel-Paxton), \"m-v\" (Marzari-Vanderbilt), and \"fermi\" (Fermi-"
+"Dirac) can be specified."
+
+#: ../../usage/aodftcalculator_class.rst:291
+msgid "0.02 * Hartree"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:293
+msgid "Smearingの幅(eV)です。"
+msgstr "Width of smearing (eV)."
+
+#: ../../usage/aodftcalculator_class.rst:298
+msgid "SCF関連"
+msgstr "SCF related"
+
+#: ../../usage/aodftcalculator_class.rst:303
+msgid "500"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:305
+msgid "繰り返し回数の最大値です。"
+msgstr "Maximum number of iterations."
+
+#: ../../usage/aodftcalculator_class.rst:310
+msgid "1.0e-6 * Hartree"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:312
+msgid "エネルギーの収束条件の閾値(eV)です。"
+msgstr "Threshold for the energy convergence condition (eV)."
+
+#: ../../usage/aodftcalculator_class.rst:317
+msgid "atomic"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:319
+msgid "電子密度の初期値を与える方法を設定します。\"atomic\"（孤立原子の電子密度の重ね合わせ）、\"qeq\"（未実装）、\"density_matrix\"（既存の密度行列）が指定できます。初期値としてrhoを与える場合はNoneを指定できます。"
+msgstr ""
+"Setting for the method to provide the initial charge density. \"atomic\" "
+"(superposition of isolated atom charge densities), \"qeq\" (not "
+"implemented), and \"density_matrix\" (existing density matrix) can be "
+"specified. You can also specify None if providing rho as the initial "
+"value."
+
+#: ../../usage/aodftcalculator_class.rst:324
+msgid "pulay"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:326
+msgid "電子密度を更新するときの混合法の設定です。\"simple\"（単純な線形混合）、\"pulay\"が指定できます。"
+msgstr ""
+"Setting for the mixing method when updating the charge density. "
+"\"simple\" (simple linear mixing) and \"pulay\" can be specified."
+
+#: ../../usage/aodftcalculator_class.rst:333
+msgid "電子密度を更新するときの混合率です。"
+msgstr "Mixing rate when updating the charge density."
+
+#: ../../usage/aodftcalculator_class.rst:338
+msgid "16"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:340
+msgid "電子密度の混合のために保存しておく履歴数です。"
+msgstr "Number of history items stored for charge density mixing."
+
+#: ../../usage/aodftcalculator_class.rst:345
+msgid "TF"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:347
+msgid "電子密度を更新するときの前処理の方法です。\"TF\"、\"local-TF\"（未実装）が指定できます。"
+msgstr ""
+"Setting for the preconditioning method when updating the electron "
+"density. \"TF\" and \"local-TF\" (not implemented) can be specified."
+
+#: ../../usage/aodftcalculator_class.rst:351
+msgid "None|float"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:354
+msgid "mix_precond=\"TF\"で使われるパラメータ(1/Angstrom)です。Noneの場合自動的に決定されます。"
+msgstr ""
+"Parameter (1/Angstrom) used when mix_precond=\"TF\". If None, it is "
+"determined automatically."
+
+#: ../../usage/aodftcalculator_class.rst:359
+msgid "プロパティ"
+msgstr "Properties"
+
+#: ../../usage/aodftcalculator_class.rst:361
+msgid ":py:class:`AOFDFTCalculator` オブジェクトから値を取得（一部は設定）します。"
+msgstr ""
+"Gets values from the :py:class:`AOFDFTCalculator`\\ object (some "
+"properties can also be set)."
+
+#: ../../usage/aodftcalculator_class.rst:363
+msgid ""
+"energy = calculator.total_energy\n"
+"\n"
+"calculator.device = \"cuda\""
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:371
+msgid "torch.device（設定時はstr|torch.device）"
+msgstr "torch.device (str|torch.device when setting)"
+
+#: ../../usage/aodftcalculator_class.rst:373
+msgid "PyTorchの計算を行うデバイスの設定です。変更するとメンバーのオブジェクトをそのデバイスに移動します。"
+msgstr ""
+"Setting for the device to perform PyTorch calculations. Changing this "
+"moves member objects to that device."
+
+#: ../../usage/aodftcalculator_class.rst:377
+msgid ""
+"torch.Tensor(n_rho, na, nb, nc)（設定時はtorch.Tensor(n_rho, ma, mb, "
+"mc)|torch.Tensor(ma, mb, mc)|np.ndarray|list|tuple）"
+msgstr ""
+"torch.Tensor(n_rho, na, nb, nc) (torch.Tensor(n_rho, ma, mb, "
+"mc)|torch.Tensor(ma, mb, mc)|np.ndarray|list|tuple when setting)"
+
+#: ../../usage/aodftcalculator_class.rst:379
+msgid "SCF計算後に得られる電子密度です。"
+msgstr "Charge density obtained after the SCF calculation."
+
+#: ../../usage/aodftcalculator_class.rst:381
+msgid "non-polarized: n_rho=1, [charge density]"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:382
+msgid "polarized: n_rho=2, [charge density, spin density]"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:383
+msgid "non-collinear: n_rho=4, [charge density, spin-x, spin-y, spin-z]"
+msgstr ""
+
+#: ../../usage/aodftcalculator_class.rst:385
+msgid "計算前に設定すると初期電子密度として与えられます。設定時に既存の計算結果はクリアされます。"
+msgstr ""
+"If set before the calculation, it is provided as the initial charge "
+"density. Existing calculation results are cleared when setting."
+
+#: ../../usage/aodftcalculator_class.rst:391
+msgid "全エネルギー(eV)です。"
+msgstr "Total energy (eV)."
+
+#: ../../usage/aodftcalculator_class.rst:397
+msgid "フェルミエネルギー(eV)です。polarizedの場合、アップスピンとダウンスピンのフェルミエネルギーの平均値を返します。"
+msgstr ""
+"Fermi energy (eV). In the polarized case, returns the average value of "
+"the up-spin and down-spin Fermi energies."
+
+#: ../../usage/aodftcalculator_class.rst:403
+msgid "アップスピンのフェルミエネルギー(eV)です。"
+msgstr "Up-spin Fermi energy (eV)."
+
+#: ../../usage/aodftcalculator_class.rst:409
+msgid "ダウンスピンのフェルミエネルギー(eV)です。"
+msgstr "Down-spin Fermi energy (eV)."
+
+#: ../../usage/aodftcalculator_class.rst:415
+msgid "Smearingに由来する自由エネルギーの低下分（エントロピー補正） :math:`-TS` (eV)です。"
+msgstr "Free energy decrease (entropy correction) :math:`-TS` due to smearing."
+
+#: ../../usage/aodftcalculator_class.rst:421
+msgid "SCF計算のエネルギーの誤差(eV)です。"
+msgstr "Energy error of the SCF calculation (eV)."
+
+#: ../../usage/aodftcalculator_class.rst:427
+msgid "SCF計算が収束しているかどうかです。"
+msgstr "Whether the SCF calculation has converged."
+
+#: ../../usage/aodftcalculator_class.rst:433
+msgid "全磁気モーメントです。"
+msgstr "Total magnetic moment."
+
+#: ../../usage/aodftcalculator_class.rst:439
+msgid "絶対磁気モーメントです。"
+msgstr "Absolute magnetic moment."
+
+#: ../../usage/calculator.rst:5
+msgid "DFT計算(AOFDFTCalculator)"
+msgstr "DFT Calculation (AOFDFTCalculator)"
+
+#: ../../usage/calculator.rst:7
+msgid ""
+"AOFDFTはPythonモジュール\\ `ASE(Atomic Simulation Environment) <https://ase-"
+"lib.org/>`_\\ の\\ `Calculator <https://ase-"
+"lib.org/ase/calculators/calculators.html>`__\\ として実装されています。"
+msgstr ""
+"AOFDFT is implemented as a `Calculator <https://ase-"
+"lib.org/ase/calculators/calculators.html>`__ of the Python module "
+"`ASE(Atomic Simulation Environment) <https://ase-lib.org/>`_."
+
+#: ../../usage/calculator.rst:9
+msgid "使い方は既存のCalculatorと同様です。Calculatorオブジェクトを作成し、Atomsオブジェクトのcalcとして設定して、計算のメソッドを呼び出します。"
+msgstr ""
+"The usage is the same as for existing Calculators. Create a Calculator "
+"object, set it as the calc of an Atoms object, and call the calculation "
+"methods."
+
+#: ../../usage/calculator.rst:11
+msgid ""
+"from aofdft.calculator import AOFDFTCalculator\n"
+"\n"
+"atoms.calc = AOFDFTCalculator(kin_type=\"AS25\", "
+"kin_model=\"AdvanceSoft25-80Ry-ft\", xc=\"LDA\")\n"
+"energy = atoms.get_potential_energy()"
+msgstr ""
+
+#: ../../usage/calculator.rst:21
+msgid "入力"
+msgstr "Input"
+
+#: ../../usage/calculator.rst:23
+msgid ""
+"原子座標をAtomsオブジェクトとして、計算の設定等を :py:class:`AOFDFTCalculator` "
+"のコンストラクタの引数として渡します。"
+msgstr ""
+"Pass atomic coordinates as an Atoms object, and calculation settings, "
+"etc., as arguments to the constructor of :py:class:`AOFDFTCalculator` ."
+
+#: ../../usage/calculator.rst:25
+msgid ""
+"ここでは主要な設定項目を示します。すべての設定項目は\\ :ref:`AOFDFTCalculator#コンストラクタの引数 "
+"<aodftcalculator_constructor>`\\ を参照してください。"
+msgstr ""
+"The main configuration items are shown here. For all configuration items,"
+" please refer to :ref:`AOFDFTCalculator#Constructor Arguments "
+"<aodftcalculator_constructor>`\\ ."
+
+#: ../../usage/calculator.rst:31
+msgid "DFT計算に使用する運動エネルギー汎関数を指定します。\"AS25\"でAdvanceSoft25汎関数を使用します。従来の汎関数として\"TFvW\"、\"LKT\"が使えます。"
+msgstr ""
+"Specifies the kinetic energy functional used for DFT calculations. "
+"\"AS25\" uses the AdvanceSoft25 functional. \"TFvW\" and \"LKT\" can be "
+"used as conventional functionals."
+
+#: ../../usage/calculator.rst:37
+msgid "AdvanceSoft25汎関数を使う場合、そのモデルを指定します。学習済みモデルはファイル名のみ（拡張子なし）で指定できます。"
+msgstr ""
+"Specifies the model when using the AdvanceSoft25 functional. Pre-trained "
+"models can be specified by the file name only (without extension)."
+
+#: ../../usage/calculator.rst:43
+msgid "GPUが搭載されたマシンで実行する場合、\"cuda\"を指定することでGPUを使ってPyTorchの計算を行います。"
+msgstr ""
+"When running on a machine equipped with a GPU, specifying \"cuda\" "
+"performs PyTorch calculations using the GPU."
+
+#: ../../usage/calculator.rst:55
+msgid ""
+"スピンを考慮した計算を行うかどうかの設定です。\"non-"
+"polarized\"はスピン偏極なし、\"polarized\"はスピン偏極ありの計算を行います。"
+msgstr ""
+"Setting for whether to perform calculations considering spin. \"non-"
+"polarized\" performs calculations without spin polarization, and "
+"\"polarized\" performs calculations with spin polarization."
+
+#: ../../usage/calculator.rst:66
+msgid "学習済みモデル"
+msgstr "Pre-trained models"
+
+#: ../../usage/calculator.rst:68
+msgid ""
+"学習済みモデルは :file:`aofdft/deepkin/pretrained` "
+"にpthファイルとして入っています。各モデルの説明はフォルダ内の :file:`README.txt` を参照してください。"
+msgstr ""
+"Pre-trained models are stored as pth files in "
+":file:`aofdft/deepkin/pretrained` . Please refer to :file:`README.txt` in"
+" the folder for descriptions of each model."
+
+#: ../../usage/calculator.rst:73
+msgid "計算実行"
+msgstr "Running the calculation"
+
+#: ../../usage/calculator.rst:75
+msgid ""
+"Atomsオブジェクトの :py:func:`get_potential_energy()` または "
+":py:func:`get_forces()` を呼び出すことで、DFT計算が実行されます。"
+msgstr ""
+"DFT calculation is executed by calling :py:func:`get_potential_energy()` "
+"or :py:func:`get_forces()` of the Atoms object."
+
+#: ../../usage/calculator.rst:77
+msgid "既に計算結果があり、前回の計算からAtomsオブジェクトに変化がない場合、SCF計算は実行されず、前回の計算結果が返ります。"
+msgstr ""
+"If calculation results already exist and the Atoms object has not changed"
+" since the previous calculation, the SCF calculation is not executed, and"
+" the previous calculation results are returned."
+
+#: ../../usage/calculator.rst:82
+msgid "結果取得"
+msgstr "Retrieving results"
+
+#: ../../usage/calculator.rst:84
+msgid ""
+":py:func:`get_potential_energy()` 、 :py:func:`get_forces()` "
+"の返り値として結果を取得します。全エネルギーはeV、力は原子数*3のeV/ÅのNumPy配列です。"
+msgstr ""
+"Retrieve results as return values of :py:func:`get_potential_energy()` "
+"and :py:func:`get_forces()`. The total energy is in eV, and the forces "
+"are a NumPy array of size number of atoms * 3 in eV/Å."
+
+#: ../../usage/calculator.rst:86
+msgid ""
+"原子ごとの電荷、スピンはAtomsオブジェクトから atoms.arrays[\"charge\"] 、 "
+"atoms.arrays[\"spin\"] としてNumPy配列で取得できます。"
+msgstr ""
+"Setting for whether to calculate the charge and spin of each atom after "
+"the SCF calculation. These can be retrieved as atoms.arrays[\"charge\"] "
+"and atoms.arrays[\"spin\"], respectively."
+
+#: ../../usage/calculator.rst:88
+msgid ""
+"また、 AOFDFTCalculator オブジェクトのプロパティで追加の結果を取得できます。詳細は\\ "
+":ref:`AOFDFTCalculator#プロパティ <aodftcalculator_property>`\\ を参照してください。"
+msgstr ""
+"Also, additional results can be obtained via the properties of the "
+"AOFDFTCalculator object. Please refer to "
+":ref:`AOFDFTCalculator#Properties <aodftcalculator_property>` for "
+"details."
+
+#: ../../usage/data_generator.rst:5
+msgid "教師データ生成(AOFKinDataGenerator)"
+msgstr "Training Data Generation (AOFKinDataGenerator)"
+
+#: ../../usage/data_generator.rst:7
+msgid "汎関数の学習・テストに使う教師データを生成します。"
+msgstr "Generates training data used for training and testing functionals."
+
+#: ../../usage/data_generator.rst:12 ../../usage/trainer.rst:12
+msgid "準備"
+msgstr "Preparation"
+
+#: ../../usage/data_generator.rst:14
+msgid ""
+"電子密度とエネルギーを計算するための第一原理計算にはOpenMXを使用します。\\ `OpenMXの実行ファイルをインストール "
+"<https://www.openmx-square.org/>`_\\ し、 :envvar:`PATH` にファイルの場所を追加してください。"
+msgstr ""
+"OpenMX is used for first-principles calculations to compute charge "
+"density and energy. Please `install the OpenMX executable <https://www"
+".openmx-square.org/>`_ and add the file location to :envvar:`PATH`\\ ."
+
+#: ../../usage/data_generator.rst:16
+msgid "教師データに使う原子構造のCIFファイルを用意し、 :file:`cif_files` フォルダに入れてください。"
+msgstr ""
+"Prepare CIF files of atomic structures to be used for training data, and "
+"place them in the :file:`cif_files` folder."
+
+#: ../../usage/data_generator.rst:21 ../../usage/trainer.rst:25
+msgid "実行"
+msgstr "Execution"
+
+#: ../../usage/data_generator.rst:23
+msgid "aofdftをインストールした環境で、 :file:`data/generate_aof_kin_data.py` を実行します。"
+msgstr ""
+"Execute :file:`data/generate_aof_kin_data.py` in an environment where "
+"aofdft is installed."
+
+#: ../../usage/data_generator.rst:25
+msgid "各CIFファイルを読み込んで、OpenMXを使ったSCF計算を行い、教師データを出力します。"
+msgstr ""
+"Reads each CIF file, performs SCF calculations using OpenMX, and outputs "
+"training data."
+
+#: ../../usage/data_generator.rst:27
+msgid "python generate_aof_kin_data.py"
+msgstr ""
+
+#: ../../usage/data_generator.rst:31
+msgid "PBSでのジョブスクリプトの例が :file:`data/run.sh` にあります。"
+msgstr "An example of a job script for PBS is in :file:`data/run.sh` ."
+
+#: ../../usage/data_generator.rst:33 ../../usage/trainer.rst:37
+msgid "以下の実行オプションが指定できます。"
+msgstr "The following execution options can be specified."
+
+#: ../../usage/data_generator.rst:39
+msgid "cif_files"
+msgstr ""
+
+#: ../../usage/data_generator.rst:41
+msgid "CIFファイルがあるフォルダを指定します。"
+msgstr "Specifies the folder containing CIF files."
+
+#: ../../usage/data_generator.rst:45
+msgid "aof_kin_data"
+msgstr ""
+
+#: ../../usage/data_generator.rst:47
+msgid "計算したデータの出力先を指定します。フォルダが存在する場合、実行時に中身を削除します。"
+msgstr ""
+"Specifies the output destination for the calculated data. If the folder "
+"exists, the contents are deleted during execution."
+
+#: ../../usage/data_generator.rst:51
+msgid "omx_work"
+msgstr ""
+
+#: ../../usage/data_generator.rst:53
+msgid "OpenMXの作業フォルダを指定します。"
+msgstr "Specifies the OpenMX working folder."
+
+#: ../../usage/data_generator.rst:57
+msgid "100"
+msgstr ""
+
+#: ../../usage/data_generator.rst:59
+msgid "SCFの繰り返し回数の最大値です。"
+msgstr "The maximum number of SCF iterations."
+
+#: ../../usage/data_generator.rst:63
+msgid "2.0"
+msgstr ""
+
+#: ../../usage/data_generator.rst:65
+msgid "系の正味の電荷(total_charge)をランダムに変化させて計算を行います。その変化量の最大値です。"
+msgstr ""
+"Calculations are performed by randomly varying the net charge "
+"(total_charge) of the system. This is the maximum value of the variation."
+
+#: ../../usage/data_generator.rst:69
+msgid "0.5"
+msgstr ""
+
+#: ../../usage/data_generator.rst:71
+msgid "系に遷移金属が含まれる場合、ここで指定した割合の系をスピンあり(spin_type=polarized)で計算します。"
+msgstr ""
+"If the system contains transition metals, calculations are performed with"
+" spin (spin_type=polarized) for the proportion of systems specified here."
+
+#: ../../usage/data_generator.rst:75
+msgid "6"
+msgstr ""
+
+#: ../../usage/data_generator.rst:77
+msgid "OpenMXを実行する時のMPI並列数です。"
+msgstr "Number of MPI processes when running OpenMX."
+
+#: ../../usage/data_generator.rst:79
+msgid ""
+":file:`generate_aof_kin_data.py` は内部的に "
+":py:class:`aofdft.aof_kin.AOFKinDataGenerator` "
+"を呼び出しています。OpenMXに渡すパラメータを変更したい場合などはスクリプトの内容をご確認ください。"
+msgstr ""
+":file:`generate_aof_kin_data.py` internally calls "
+":py:class:`aofdft.aof_kin.AOFKinDataGenerator` . Please check the content"
+" of the script if you wish to change the parameters passed to OpenMX."
+
+#: ../../usage/data_generator.rst:84 ../../usage/trainer.rst:58
+msgid "出力"
+msgstr "Output"
+
+#: ../../usage/data_generator.rst:86
+msgid "系の情報と計算結果を含んだpthファイルが :file:`aof_kin_data` に出力されます。"
+msgstr ""
+"pth files containing system information and calculation results are "
+"output to :file:`aof_kin_data` ."
+
+#: ../../usage/data_generator.rst:91 ../../usage/trainer.rst:65
+msgid "ツール"
+msgstr "Tools"
+
+#: ../../usage/data_generator.rst:93
+msgid ":file:`data` フォルダ内にスクリプトがあります。多数のCIFファイルを分けて教師データを作りたい場合に便利です。"
+msgstr ""
+"There are scripts in the :file:`data` folder. They are useful when you "
+"want to split a large number of CIF files to create training data."
+
+#: ../../usage/data_generator.rst:97
+msgid ":file:`cif_files` 内にあるCIFファイルを :file:`cif_files_番号` に分けてコピーします。"
+msgstr ""
+"Splits and copies the CIF files in :file:`cif_files` into "
+":file:`cif_files_(number)` ."
+
+#: ../../usage/data_generator.rst:99
+msgid "分割数はスクリプト冒頭で設定します。"
+msgstr "The number of splits is set at the beginning of the script."
+
+#: ../../usage/data_generator.rst:103
+msgid "教師データを出力済みのCIFファイルを :file:`cif_files_*` フォルダから削除します。"
+msgstr ""
+"Deletes CIF files for which training data has already been output from "
+"the :file:`cif_files_*` folders."
+
+#: ../../usage/data_generator.rst:107
+msgid ":file:`aof_kin_data_*` フォルダのpthファイルをコピーして :file:`aof_kin_data` フォルダにまとめます。"
+msgstr ""
+"Copies pth files from the :file:`aof_kin_data_*` folders and collects "
+"them into the :file:`aof_kin_data` folder."
+
+#: ../../usage/data_generator.rst:111
+msgid "CIFファイルを元に、格子ベクトル・原子座標をガウス分布に従って変化させたCIFファイルを生成します。"
+msgstr ""
+"Generates CIF files with lattice vectors and atomic coordinates perturbed"
+" according to a Gaussian distribution based on a CIF file."
+
+#: ../../usage/intro.rst:5
+msgid "概要"
+msgstr "Overview"
+
+#: ../../usage/intro.rst:7
+msgid ""
+"AOFDFTはPythonモジュール\\ `ASE(Atomic Simulation Environment) <https://ase-"
+"lib.org/>`_\\ "
+"のCalculatorとして実装されています。このマニュアルではASE自体の説明には深入りせず、AOFDFT独自の使用方法を中心に説明します。"
+msgstr ""
+"AOFDFT is implemented as a Calculator for the Python module `ASE (Atomic "
+"Simulation Environment) <https://ase-lib.org/>`_. This manual focuses on "
+"usage specific to AOFDFT, without going into detail about ASE itself."
+
+#: ../../usage/intro.rst:9
+msgid "ASE自体の使い方については公式のドキュメントやウェブ上の解説をご参照ください。"
+msgstr ""
+"Please refer to the official documentation or explanations on the web for"
+" how to use ASE itself."
+
+#: ../../usage/intro.rst:14
+msgid "使用例"
+msgstr "Usage example"
+
+#: ../../usage/intro.rst:16
+#, python-brace-format
+msgid ""
+"# Calculatorをインポート\n"
+"from aofdft.calculator import AOFDFTCalculator\n"
+"from ase.build import bulk\n"
+"from ase.io import read\n"
+"\n"
+"# Atomsオブジェクトを作成\n"
+"atoms = bulk(\"Si\", crystalstructure=\"diamond\", a=5.43)\n"
+"# ファイルから読み込む場合\n"
+"#atoms = read(\"si.cif\")\n"
+"\n"
+"# Calculatorオブジェクトを設定\n"
+"atoms.calc = AOFDFTCalculator(kin_type=\"AS25\", "
+"kin_model=\"AdvanceSoft25-80Ry-ft\", xc=\"LDA\")\n"
+"\n"
+"# Atomsオブジェクトのメソッドを呼び出すと計算が行われる\n"
+"energy = atoms.get_potential_energy()\n"
+"forces = atoms.get_forces()\n"
+"\n"
+"# 出力\n"
+"print(f\"\\nTotal energy: {energy:.6f} eV\")\n"
+"print(\"Forces on atoms (eV/Å):\")\n"
+"print(forces)"
+msgstr ""
+"# Import the Calculator\n"
+"from aofdft.calculator import AOFDFTCalculator\n"
+"from ase.build import bulk\n"
+"from ase.io import read\n"
+"\n"
+"# Create an Atoms object\n"
+"atoms = bulk(\"Si\", crystalstructure=\"diamond\", a=5.43)\n"
+"# If reading from a file\n"
+"#atoms = read(\"si.cif\")\n"
+"\n"
+"# Set the Calculator object\n"
+"atoms.calc = AOFDFTCalculator(kin_type=\"AS25\", "
+"kin_model=\"AdvanceSoft25-80Ry-ft\", xc=\"LDA\")\n"
+"\n"
+"# Calculation is performed when calling the Atoms object methods\n"
+"energy = atoms.get_potential_energy()\n"
+"forces = atoms.get_forces()\n"
+"\n"
+"# Output\n"
+"print(f\"\\nTotal energy: {energy:.6f} eV\")\n"
+"print(\"Forces on atoms (eV/Å):\")\n"
+"print(forces)"
+
+#: ../../usage/intro.rst:40
+msgid ":file:`examples` フォルダに使用例のPythonスクリプトがあります。"
+msgstr "There are example Python scripts in the :file:`examples` folder."
+
+#: ../../usage/intro.rst:45
+msgid "機能"
+msgstr "Features"
+
+#: ../../usage/intro.rst:47
+msgid "学習済みモデルを使った計算はASEのCalculatorとしてすぐに実行できます。"
+msgstr ""
+"Calculations using pre-trained models can be executed immediately as an "
+"ASE Calculator."
+
+#: ../../usage/intro.rst:49
+msgid "また、新規のモデルの学習や、既存のモデルのファインチューニングを行うことができます。"
+msgstr "In addition, you can train new models or fine-tune existing models."
+
+#: ../../usage/intro.rst:51
+msgid "各機能の使い方はそれぞれのページを参照してください。"
+msgstr "Please refer to the respective pages for how to use each feature."
+
+#: ../../usage/intro.rst:53
+msgid ":doc:`calculator`"
+msgstr ""
+
+#: ../../usage/intro.rst:54
+msgid ":doc:`data_generator`"
+msgstr ""
+
+#: ../../usage/intro.rst:55
+msgid ":doc:`trainer`"
+msgstr ""
+
+#: ../../usage/model_yml.rst:5
+msgid "モデルの設定ファイル"
+msgstr "Model configuration file"
+
+#: ../../usage/model_yml.rst:7
+msgid ":file:`aofdft/deepkin/model/kinetic_density.yml*` にサンプルの設定ファイルがあります。"
+msgstr ""
+"Sample configuration files are available at "
+":file:`aofdft/deepkin/model/kinetic_density.yml*` ."
+
+#: ../../usage/model_yml.rst:9 ../../usage/train_yml.rst:9
+msgid "行頭が#の行はコメントとして扱われます。値の後に空白+#でもコメントを書けます。"
+msgstr ""
+"Lines starting with # are treated as comments. You can also write "
+"comments after a value using a space followed by #."
+
+#: ../../usage/model_yml.rst:13
+msgid "モデルの種類です。\"DeepField\"（汎グラフによる深層学習モデル）、\"NonLocal\"（非局所特徴ベクトルによる機械学習モデル）、\"SemiLocal\"（準局所特徴ベクトルによる機械学習モデル）から指定します。"
+msgstr ""
+"Model type. Specify from \"DeepField\" (Deep learning model using "
+"Graphical), \"NonLocal\" (Machine learning model using non-local feature "
+"vectors), or \"SemiLocal\" (Machine learning model using semi-local "
+"feature vectors)."
+
+#: ../../usage/model_yml.rst:17
+msgid "特徴ベクトルの値の範囲を制限する活性化関数の設定です。\"null\"（適用しない）、\"fixed\"（固定重み付きtanh関数）、\"learnable\"（可変重み付きtanh関数）から指定します。"
+msgstr ""
+"Settings for the activation function to limit the range of feature vector"
+" values. Specify from \"null\" (do not apply), \"fixed\" (fixed weighted "
+"tanh function), or \"learnable\" (learnable weighted tanh function)."
+
+#: ../../usage/model_yml.rst:21
+msgid "重み付きtanh関数の重みの初期値です。features_tanh=fixedの場合はこの値で固定されます。"
+msgstr ""
+"Initial value of the weight for the weighted tanh function. If "
+"features_tanh=fixed, it is fixed at this value."
+
+#: ../../usage/model_yml.rst:25
+msgid "重み付きtanh関数の重みの最小値です。"
+msgstr "Minimum value of the weight for the weighted tanh function."
+
+#: ../../usage/model_yml.rst:29
+msgid "重み付きtanh関数の重みの最大値です。"
+msgstr "Maximum value of the weight for the weighted tanh function."
+
+#: ../../usage/model_yml.rst:33
+msgid "特徴ベクトルとして電子密度の勾配とラプラシアンの2つを使う(False)か、勾配とラプラシアンの積を加えた3つを使う(True)かの設定です。"
+msgstr ""
+"Setting for whether to use two feature vectors: the gradient and "
+"Laplacian of the charge density (False), or three feature vectors by "
+"adding the product of the gradient and Laplacian (True)."
+
+#: ../../usage/model_yml.rst:37
+msgid "隣接相関のカットオフ半径(Bohr)です。"
+msgstr "Cutoff radius for adjacency correlation (Bohr)."
+
+#: ../../usage/model_yml.rst:41
+msgid ""
+"特徴ベクトルに対し隣接相関による畳み込み積分を行うときに、半径 :math:`R_i` ・幅 :math:`\\kappa_i` "
+"の異なる複数の積分核（重み関数）を使います。 :math:`i` に対し :math:`R_i` "
+"を等間隔に配置する(False)か、等比数列的に間隔を広げながら配置する(True)かの設定です。"
+msgstr ""
+"When performing convolution integrals using adjacency correlations on "
+"feature vectors, multiple integral kernels (weight functions) with "
+"different radii :math:`R_i` and widths :math:`\\kappa_i` are used. This "
+"setting specifies whether to arrange :math:`R_i` at equal intervals with "
+"respect to :math:`i` (False) or to arrange them with geometrically "
+"increasing intervals (True)."
+
+#: ../../usage/model_yml.rst:45
+msgid "long_tailed=Trueの場合に使うスケーリングパラメータです。"
+msgstr "Scaling parameter used when long_tailed=True."
+
+#: ../../usage/model_yml.rst:49
+msgid "積分核（重み関数）の数です。"
+msgstr "The number of integral kernels (weight functions)."
+
+#: ../../usage/model_yml.rst:53
+msgid "相互作用ブロック（畳み込み→多層パーセプトロンによる相互作用）の数です。"
+msgstr ""
+"The number of interaction blocks (interaction via convolution -> multi-"
+"layer perceptron)."
+
+#: ../../usage/model_yml.rst:57
+msgid "相互作用ブロックの多層パーセプトロンの隠れ層の次元数です。"
+msgstr ""
+"The number of dimensions of the hidden layer of the multi-layer "
+"perceptron in the interaction block."
+
+#: ../../usage/model_yml.rst:61
+msgid "相互作用ブロックの多層パーセプトロンの隠れ層の数です。"
+msgstr ""
+"The number of hidden layers of the multi-layer perceptron in the "
+"interaction block."
+
+#: ../../usage/model_yml.rst:65
+msgid "相互作用ブロックの多層パーセプトロンにGated Linear Unit(GLU)を使うかどうかの設定です。"
+msgstr ""
+"Setting for whether to use Gated Linear Unit (GLU) for the multi-layer "
+"perceptron in the interaction block."
+
+#: ../../usage/model_yml.rst:69
+msgid "相互作用ブロックの多層パーセプトロンでレイヤー正規化を使うかどうかの設定です。"
+msgstr ""
+"Setting for whether to use layer normalization for the multi-layer "
+"perceptron in the interaction block."
+
+#: ../../usage/model_yml.rst:73
+msgid "相互作用ブロックの多層パーセプトロンで残差接続（入力を出力に加算する）を行うかどうかの設定です。"
+msgstr ""
+"Setting for whether to use residual connections (adding the input to the "
+"output) in the multi-layer perceptron of the interaction block."
+
+#: ../../usage/model_yml.rst:77
+msgid "出力ブロックの多層パーセプトロンの隠れ層の次元数です。"
+msgstr ""
+"The number of dimensions of the hidden layer of the multi-layer "
+"perceptron in the output block."
+
+#: ../../usage/model_yml.rst:81
+msgid "出力ブロックの多層パーセプトロンの隠れ層の層数です。"
+msgstr ""
+"The number of hidden layers of the multi-layer perceptron in the output "
+"block."
+
+#: ../../usage/model_yml.rst:85
+msgid "出力ブロックの多層パーセプトロンにGated Linear Unit(GLU)を使うかどうかの設定です。"
+msgstr ""
+"Setting for whether to use Gated Linear Unit (GLU) for the multi-layer "
+"perceptron in the output block."
+
+#: ../../usage/model_yml.rst:89
+msgid "出力ブロックの多層パーセプトロンでレイヤー正規化を使うかどうかの設定です。"
+msgstr ""
+"Setting for whether to use layer normalization for the multi-layer "
+"perceptron in the output block."
+
+#: ../../usage/model_yml.rst:93
+#, python-brace-format
+msgid ""
+"汎グラフの出力を使って運動エネルギー密度 :math:`\\tau(\\mathbf{r})` を計算するとき、TFvWモデルに対する補強因子 "
+":math:`F^\\mathrm{NN}[\\rho](\\mathbf{r})` として使います。このときのvWモデルの使い方を指定します。"
+msgstr ""
+"When calculating the kinetic energy density :math:`\\tau(\\mathbf{r})` "
+"using the output of the universal graph, it is used as an enhancement "
+"factor :math:`F^\\mathrm{NN}[\\rho](\\mathbf{r})` for the TFvW model. "
+"This specifies how the vW model is used in this case."
+
+#: ../../usage/model_yml.rst:95
+#, python-brace-format
+msgid ""
+"使わない(null): :math:`\\tau(\\mathbf{r}) = \\tau^\\mathrm{TF}(\\mathbf{r}) "
+"F_\\mathrm{TF}^\\mathrm{NN}[\\rho](\\mathbf{r})`"
+msgstr ""
+"Not used (null): :math:`\\tau(\\mathbf{r}) = "
+"\\tau^\\mathrm{TF}(\\mathbf{r}) "
+"F_\\mathrm{TF}^\\mathrm{NN}[\\rho](\\mathbf{r})`"
+
+#: ../../usage/model_yml.rst:96
+#, python-brace-format
+msgid ""
+"補強因子なしで使う(fixed): :math:`\\tau(\\mathbf{r}) = "
+"\\tau^\\mathrm{TF}(\\mathbf{r}) "
+"F_\\mathrm{TF}^\\mathrm{NN}[\\rho](\\mathbf{r}) + "
+"\\tau^\\mathrm{vW}(\\mathbf{r})`"
+msgstr ""
+"Used without enhancement factor (fixed): :math:`\\tau(\\mathbf{r}) = "
+"\\tau^\\mathrm{TF}(\\mathbf{r}) "
+"F_\\mathrm{TF}^\\mathrm{NN}[\\rho](\\mathbf{r}) + "
+"\\tau^\\mathrm{vW}(\\mathbf{r})`"
+
+#: ../../usage/model_yml.rst:97
+#, python-brace-format
+msgid ""
+"補強因子を適用して使う(learnable): :math:`\\tau(\\mathbf{r}) = "
+"\\tau^\\mathrm{TF}(\\mathbf{r}) "
+"F_\\mathrm{TF}^\\mathrm{NN}[\\rho](\\mathbf{r}) + "
+"\\tau^\\mathrm{vW}(\\mathbf{r}) "
+"F_\\mathrm{vW}^\\mathrm{NN}[\\rho](\\mathbf{r})`"
+msgstr ""
+"Used with enhancement factor (learnable): :math:`\\tau(\\mathbf{r}) = "
+"\\tau^\\mathrm{TF}(\\mathbf{r}) "
+"F_\\mathrm{TF}^\\mathrm{NN}[\\rho](\\mathbf{r}) + "
+"\\tau^\\mathrm{vW}(\\mathbf{r}) "
+"F_\\mathrm{vW}^\\mathrm{NN}[\\rho](\\mathbf{r})`"
+
+#: ../../usage/model_yml.rst:98
+#, python-brace-format
+msgid ""
+"補強因子を差分として適用して使う(learnable_delta): :math:`\\tau(\\mathbf{r}) = "
+"\\tau^\\mathrm{TF}(\\mathbf{r}) "
+"F_\\mathrm{TF}^\\mathrm{NN}[\\rho](\\mathbf{r}) + "
+"\\tau^\\mathrm{vW}(\\mathbf{r}) \\left(1 + "
+"F_\\mathrm{vW}^\\mathrm{NN}[\\rho](\\mathbf{r})\\right)`"
+msgstr ""
+"Used with enhancement factor as a delta (learnable_delta): "
+":math:`\\tau(\\mathbf{r}) = \\tau^\\mathrm{TF}(\\mathbf{r}) "
+"F_\\mathrm{TF}^\\mathrm{NN}[\\rho](\\mathbf{r}) + "
+"\\tau^\\mathrm{vW}(\\mathbf{r}) \\left(1 + "
+"F_\\mathrm{vW}^\\mathrm{NN}[\\rho](\\mathbf{r})\\right)`"
+
+#: ../../usage/model_yml.rst:102
+msgid "汎グラフの出力に適用する活性化関数を指定します。"
+msgstr "Specifies the activation function to apply to the output of the Graphical."
+
+#: ../../usage/model_yml.rst:104
+#, python-brace-format
+msgid ""
+"enhance_scale>1の場合: :math:`\\alpha` = enhance_scale とするSloping Step関数 "
+":math:`(\\alpha/2)\\lbrace(\\tanh((2x/\\alpha-1)^n))^{1/n}+1\\rbrace`"
+msgstr ""
+"When enhance_scale > 1: Sloping Step function with :math:`\\alpha` = "
+"enhance_scale "
+":math:`(\\alpha/2)\\lbrace(\\tanh((2x/\\alpha-1)^n))^{1/n}+1\\rbrace`"
+
+#: ../../usage/model_yml.rst:105
+msgid "それ以外の場合: Softplus関数 :math:`(1/\\beta)\\log(1+\\exp(\\beta x))`"
+msgstr "Otherwise: Softplus function :math:`(1/\\beta)\\log(1+\\exp(\\beta x))`"
+
+#: ../../usage/model_yml.rst:109
+msgid "Sloping Step関数の指数 :math:`n` です。奇数である必要があります。"
+msgstr ""
+"The exponent :math:`n` of the Sloping Step function. It must be an odd "
+"number."
+
+#: ../../usage/model_yml.rst:113
+#, python-brace-format
+msgid ""
+"TFモデルに対する補強因子 :math:`F_\\mathrm{TF}^\\mathrm{NN}[\\rho](\\mathbf{r})` "
+"に自由電子ガスモデルに基づくペナルティ関数を適用します。"
+msgstr ""
+"Applies a penalty function based on the free electron gas model to the "
+"enhancement factor "
+":math:`F_\\mathrm{TF}^\\mathrm{NN}[\\rho](\\mathbf{r})` for the TF model."
+
+#: ../../usage/train_yml.rst:5
+msgid "学習の設定ファイル"
+msgstr "Training configuration file"
+
+#: ../../usage/train_yml.rst:7
+msgid ":file:`aofdft/deepkin/train/kinetic_trainer.yml*` にサンプルの設定ファイルがあります。"
+msgstr ""
+"A sample configuration file is available at "
+":file:`aofdft/deepkin/train/kinetic_trainer.yml*`\\ ."
+
+#: ../../usage/train_yml.rst:13
+msgid ""
+"PyTorchで使うデータ型を :py:type:`torch.float64` にする(True)か "
+":py:type:`torch.float32` にする(False)かの設定です。"
+msgstr ""
+"Setting for whether to use :py:type:`torch.float64`\\ (True) or "
+":py:type:`torch.float32`\\ (False) as the data type for PyTorch."
+
+#: ../../usage/train_yml.rst:17
+msgid "PyTorchの計算を行うデバイスの設定です。CPUのみを使用するには\"cpu\"、GPUを使用するには\"cuda\"を指定します。"
+msgstr ""
+"Setting for the device to perform PyTorch calculations. Specify \"cpu\" "
+"to use only the CPU, or \"cuda\" to use the GPU."
+
+#: ../../usage/train_yml.rst:23
+msgid "ガベージコレクションとCUDAのキャッシュメモリ解放を行う頻度を0～1の数値で指定します。"
+msgstr ""
+"Specifies the frequency of garbage collection and CUDA cache memory "
+"release as a numerical value between 0 and 1."
+
+#: ../../usage/train_yml.rst:27
+msgid "教師データを常にメモリ上に読み込んでおくかどうかの設定です。"
+msgstr "Setting for whether to always keep the training data loaded in memory."
+
+#: ../../usage/train_yml.rst:31
+msgid ""
+"最適化を行う手法を設定します。\"Adam\"、\"AdamW\"、\"SGD\"（確率的最急降下法）、\"mSGD\"(Momentum "
+"SGD)から指定します。"
+msgstr ""
+"Specifies the optimization method. Select from \"Adam\", \"AdamW\", "
+"\"SGD\" (Stochastic Gradient Descent), or \"mSGD\" (Momentum SGD)."
+
+#: ../../usage/train_yml.rst:35
+msgid "学習率スケジューラー（学習率を動的に調整する方法）を設定します。"
+msgstr ""
+"Specifies the learning rate scheduler (a method for dynamically adjusting"
+" the learning rate)."
+
+#: ../../usage/train_yml.rst:37
+msgid "null: 調整しない"
+msgstr "null: Do not adjust"
+
+#: ../../usage/train_yml.rst:38
+msgid "StepLR: 一定ステップごとに :math:`\\times\\gamma`"
+msgstr "StepLR: :math:`\\times\\gamma` at regular steps"
+
+#: ../../usage/train_yml.rst:39
+msgid "ExpLR: 毎ステップ  :math:`\\times\\gamma`"
+msgstr "ExpLR: :math:`\\times\\gamma` at every step"
+
+#: ../../usage/train_yml.rst:40
+msgid "CosLR: コサインアニーリング"
+msgstr "CosLR: Cosine annealing"
+
+#: ../../usage/train_yml.rst:41
+msgid "CosRestartLR1: コサインアニーリング＋一定間隔のウォームリスタート"
+msgstr "CosRestartLR1: Cosine annealing with warm restarts at fixed intervals"
+
+#: ../../usage/train_yml.rst:42
+msgid "CosRestartLR2: コサインアニーリング＋等比数列的間隔のウォームリスタート"
+msgstr "CosRestartLR2: Cosine annealing with warm restarts at geometric intervals"
+
+#: ../../usage/train_yml.rst:43
+#, python-brace-format
+msgid "ReduceLR: 損失関数が改善しなくなったら :math:`\\times\\mathrm{factor}`"
+msgstr ""
+"ReduceLR: :math:`\\times\\mathrm{factor}` when the loss function stops "
+"improving"
+
+#: ../../usage/train_yml.rst:47
+msgid "学習率スケジューラーのパラメータを設定します。"
+msgstr "Sets the parameters for the learning rate scheduler."
+
+#: ../../usage/train_yml.rst:50
+msgid "scheduler"
+msgstr ""
+
+#: ../../usage/train_yml.rst:50
+msgid "scheduler_steps"
+msgstr ""
+
+#: ../../usage/train_yml.rst:50
+msgid "annealing_period"
+msgstr ""
+
+#: ../../usage/train_yml.rst:52
+msgid "StepLR"
+msgstr ""
+
+#: ../../usage/train_yml.rst:52 ../../usage/train_yml.rst:54
+msgid "学習率を減衰させる速さ"
+msgstr "Learning rate decay speed"
+
+#: ../../usage/train_yml.rst:52
+msgid "学習率を減衰させる間隔"
+msgstr "Learning rate decay interval"
+
+#: ../../usage/train_yml.rst:54
+msgid "ExpLR"
+msgstr ""
+
+#: ../../usage/train_yml.rst:56
+msgid "CosLR"
+msgstr ""
+
+#: ../../usage/train_yml.rst:56
+msgid "（annealing_period<1または未設定）"
+msgstr "(annealing_period < 1 or not set)"
+
+#: ../../usage/train_yml.rst:57
+msgid "全ステップ//scheduler_stepsを"
+msgstr "Total steps // scheduler_steps is"
+
+#: ../../usage/train_yml.rst:58
+msgid "半周期のステップ数とする"
+msgstr "the number of steps in a half-period"
+
+#: ../../usage/train_yml.rst:56
+msgid "半周期のステップ数"
+msgstr "Number of steps in a half-period"
+
+#: ../../usage/train_yml.rst:60
+msgid "CosRestartLR"
+msgstr ""
+
+#: ../../usage/train_yml.rst:60
+msgid "（最初の）サイクルのステップ数"
+msgstr "Number of steps in the (first) cycle"
+
+#: ../../usage/train_yml.rst:62
+msgid "ReduceLR"
+msgstr ""
+
+#: ../../usage/train_yml.rst:62
+msgid "改善を待機するステップ数(patience)"
+msgstr "Number of steps to wait for improvement (patience)"
+
+#: ../../usage/train_yml.rst:67
+msgid "学習率の最大値です。"
+msgstr "The maximum value of the learning rate."
+
+#: ../../usage/train_yml.rst:71
+msgid "学習率の最小値です。"
+msgstr "The minumum value of the learning rate."
+
+#: ../../usage/train_yml.rst:75
+msgid "最適化の重み減衰パラメータ :math:`\\lambda` です。"
+msgstr "The weight decay parameter :math:`\\lambda` for optimization."
+
+#: ../../usage/train_yml.rst:79
+msgid "学習のエポック数です。"
+msgstr "The number of training epochs."
+
+#: ../../usage/train_yml.rst:83
+msgid "学習中にログ出力を行う間隔です。"
+msgstr "The interval at which logs are output during training."
+
+#: ../../usage/train_yml.rst:87
+msgid "学習中にモデルの保存を行う間隔です。"
+msgstr "The interval at which the model is saved during training."
+
+#: ../../usage/train_yml.rst:91
+msgid "学習のバッチサイズです。"
+msgstr "The training batch size."
+
+#: ../../usage/train_yml.rst:95
+msgid "学習中にモデルの保存を行ったときに、前回保存したモデルを削除するかどうかの設定です。"
+msgstr ""
+"Settings for whether to delete the previously saved model when saving a "
+"new model during training."
+
+#: ../../usage/train_yml.rst:99
+msgid "教師データの順番をシャッフルするかどうかの設定です。"
+msgstr "Settings for whether to shuffle the order of the training data."
+
+#: ../../usage/train_yml.rst:103
+msgid "PyTorchのDataLoaderのワーカープロセス数です。"
+msgstr "The number of worker processes for the PyTorch DataLoader."
+
+#: ../../usage/train_yml.rst:107
+msgid ""
+"損失関数の設定です。\"MSERatio\"（相対的な平均二乗誤差）、\"MSERatioExt\"（MSERatioの "
+":math:`dT/d\\rho` の評価を密度で重み付けしたもの）、\"MAEEnergy\"（エネルギー単位での平均絶対誤差）から指定します。"
+msgstr ""
+"Sets the loss function. Specify from \"MSERatio\" (relative mean squared "
+"error), \"MSERatioExt\" (MSERatio with evaluation of :math:`dT/d\\rho` "
+"weighted by density), or \"MAEEnergy\" (mean absolute error in energy "
+"units)."
+
+#: ../../usage/train_yml.rst:111
+msgid "バッチの平均の損失関数がこの値よりも大きい場合、そのバッチは除外し、学習に使いません。"
+msgstr ""
+"If the average loss function of a batch is greater than this value, that "
+"batch is excluded and not used for training."
+
+#: ../../usage/train_yml.rst:115
+msgid ""
+"損失関数の計算に運動エネルギー :math:`T` を使う(True)か、運動エネルギー密度 :math:`\\tau` "
+"を使う(False)かの設定です。"
+msgstr ""
+"Whether to use kinetic energy :math:`T`\\ (True) or kinetic energy "
+"density :math:`\\tau`\\ (False) for calculating the loss function."
+
+#: ../../usage/train_yml.rst:119
+msgid ""
+"電子密度がこの値よりも小さい場合、その点の :math:`dT/d\\rho` "
+"を損失関数の評価から除外します。正の場合は絶対密度、負の場合は相対密度を使います。"
+msgstr ""
+"If the charge density is smaller than this value, :math:`dT/d\\rho` at "
+"that point is excluded from the loss function evaluation. Absolute "
+"density is used for positive values, and relative density is used for "
+"negative values."
+
+#: ../../usage/train_yml.rst:123
+msgid "損失関数を計算するときの、運動エネルギー :math:`T` の損失の重みです。"
+msgstr ""
+"The weight of the kinetic energy :math:`T` loss when calculating the loss"
+" function."
+
+#: ../../usage/train_yml.rst:127
+msgid "loss_type=MAEEnergyで、自由電子ガス(FEG)の損失をエネルギーに換算するときの係数(Hartree)です。"
+msgstr ""
+"The coefficient (Hartree) used to convert the free electron gas (FEG) "
+"loss into energy when loss_type=MAEEnergy."
+
+#: ../../usage/train_yml.rst:131
+msgid "学習に使う教師データのフォルダパスです。"
+msgstr "The folder path of the training data used for learning."
+
+#: ../../usage/train_yml.rst:135
+msgid "テストに使う教師データのフォルダパスです。"
+msgstr "The folder path of the training data used for testing."
+
+#: ../../usage/train_yml.rst:139
+msgid "学習中にバッチごとのログを出力するかどうかの設定です。"
+msgstr "Whether to output logs for each batch during training."
+
+#: ../../usage/trainer.rst:5
+msgid "汎関数の学習(KineticTrainer)"
+msgstr "Training functionals (KineticTrainer)"
+
+#: ../../usage/trainer.rst:7
+msgid "教師データを使って汎関数の学習またはファインチューニングを行います。"
+msgstr "Performs training or fine-tuning of functionals using training data."
+
+#: ../../usage/trainer.rst:14
+msgid "教師データ、テストデータをそれぞれのフォルダに用意してください。"
+msgstr ""
+"Please prepare the training data and test data in their respective "
+"folders."
+
+#: ../../usage/trainer.rst:16
+msgid ""
+":py:class:`AOFKinDataGenerator`\\ で出力したpthファイル（拡張子\\ :file:`.pth`\\ 、\\ "
+":file:`.pt`\\ ）の他、運動エネルギー密度のcubeファイル（拡張子\\ :file:`.cube`\\ ）、弊社改修版Quantum"
+" ESPRESSOで出力した教師データも使用できます。"
+msgstr ""
+"In addition to pth files (extensions :file:`.pth`\\ , :file:`.pt`\\ ) "
+"output by :py:class:`AOFKinDataGenerator`\\ , cube files of kinetic "
+"energy density (extension :file:`.cube`\\ ) and training data output by "
+"our modified version of Quantum ESPRESSO can also be used."
+
+#: ../../usage/trainer.rst:18
+msgid ""
+"設定はYAMLファイルに記述します。モデルに関するパラメータは\\ :doc:`model_yml`\\ 、学習に関するパラメータは\\ "
+":doc:`train_yml`\\ をそれぞれ参照して作成してください。"
+msgstr ""
+"Settings are described in a YAML file. Please refer to :doc:`model_yml` "
+"for model parameters and :doc:`train_yml` for training parameters."
+
+#: ../../usage/trainer.rst:20
+msgid "新規の学習ではなくファインチューニングを行う場合は、元となるモデルのpthファイルを用意してください。"
+msgstr ""
+"If performing fine-tuning instead of starting a new training, please "
+"prepare the pth file of the base model."
+
+#: ../../usage/trainer.rst:27
+msgid "aofdftをインストールした環境で、 :file:`train_deepkin/train.py` を実行します。"
+msgstr ""
+"Run :file:`train_deepkin/train.py` in the environment where aofdft is "
+"installed."
+
+#: ../../usage/trainer.rst:29
+msgid "スレッド並列実行を行うには、環境変数 :envvar:`OMP_NUM_THREADS` に並列数を設定してください。"
+msgstr ""
+"To perform thread parallel execution, set the number of threads in the "
+"environment variable :envvar:`OMP_NUM_THREADS` ."
+
+#: ../../usage/trainer.rst:31
+msgid "各教師データファイルを読み込んで、汎関数の学習を行い、モデルファイルを出力します。"
+msgstr ""
+"Reads each training data file, performs training of functionals, and "
+"outputs model files."
+
+#: ../../usage/trainer.rst:33
+msgid "python train.py"
+msgstr ""
+
+#: ../../usage/trainer.rst:41
+msgid "モデルファイルの出力先です。ファイルが存在する場合、モデルを読み込んでファインチューニングを行います。"
+msgstr ""
+"The output destination for the model file. If the file exists, the model "
+"will be loaded for fine-tuning."
+
+#: ../../usage/trainer.rst:45
+msgid "aofdft/deepkin/model/kinetic_density.yml"
+msgstr ""
+
+#: ../../usage/trainer.rst:47
+msgid "モデルに関するパラメータのYAMLファイルを指定します。ファインチューニングの場合は指定しても無視されます。"
+msgstr ""
+"Specifies the YAML file for model parameters. For fine-tuning, this "
+"specification will be ignored."
+
+#: ../../usage/trainer.rst:51
+msgid "aofdft/deepkin/train/kinetic_trainer.yml"
+msgstr ""
+
+#: ../../usage/trainer.rst:53
+msgid "学習に関するパラメータのYAMLファイルを指定します。"
+msgstr "Specifies the YAML file for training parameters."
+
+#: ../../usage/trainer.rst:60
+msgid "学習中のモデルは指定したファイル名＋エポック数、学習後のモデルは指定したファイル名＋タイムスタンプでpthファイルとして出力されます。"
+msgstr ""
+"Models during training are output as pth files with the specified file "
+"name + number of epochs, and models after training are output with the "
+"specified file name + timestamp."
+
+#: ../../usage/trainer.rst:69
+msgid "モデルのYAMLファイルからパラメータ数を取得します。"
+msgstr "Obtains the number of parameters from the model's YAML file."
+
+#: ../../usage/trainer.rst:71
+msgid "python params.py --model kinetic_density.yml"
+msgstr ""
+

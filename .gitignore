@@ -1,0 +1,5 @@
+_build
+
+docs/locale/*/doctrees/
+docs/locale/*/html/
+docs/locale/**/*.mo

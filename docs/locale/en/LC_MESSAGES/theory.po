@@ -1,0 +1,511 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, AdvanceSoft Corporation
+# This file is distributed under the same license as the Advance/OF-DFT
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Advance/OF-DFT \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-28 10:27+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../theory.rst:5
+msgid "理論"
+msgstr "Theory"
+
+#: ../../theory.rst:7
+msgid ""
+"Advance/OF-DFTで使われているAtomic Orbital Facilitated DFT(AOF-"
+"DFT)について、要素となる理論を解説します。"
+msgstr ""
+"This page explains the underlying theory of Atomic Orbital Facilitated "
+"DFT (AOF-DFT) used in Advance/OF-DFT."
+
+#: ../../theory.rst:12
+msgid "Orbital-Free DFT(OF-DFT)"
+msgstr ""
+
+#: ../../theory.rst:14
+#, python-brace-format
+msgid ""
+"密度汎関数理論(Density Functional Theory, DFT)は、系の電子密度 "
+":math:`\\rho(\\mathbf{r})` の汎関数としてエネルギー :math:`E[\\rho]` が与えられ"
+"、エネルギーを最小化することで基底状態の電子密度が得られるというHohenberg-Kohnの定理に基づきます。"
+msgstr ""
+"Density Functional Theory (DFT) is based on the Hohenberg-Kohn theorem, "
+"which states that the energy :math:`E[\\rho]` is given as a functional of"
+" the system's charge density :math:`\\rho(\\mathbf{r})` , and the ground "
+"state charge density can be obtained by minimizing the energy."
+
+#: ../../theory.rst:16
+msgid ""
+"DFTに基づく第一原理電子状態計算の標準的な手法となっているKohn-Sham DFT(KS-DFT)では"
+"、仮想的な参照系として相互作用のないKohn-Sham系を導入し、エネルギー汎関数の運動エネルギー項の計算にKS系の波動関数（Kohn-"
+"Sham軌道） :math:`\\psi_i` を使います。"
+msgstr ""
+"In Kohn-Sham DFT (KS-DFT), which is the standard method for first-"
+"principles electronic structure calculations based on DFT, a non-"
+"interacting Kohn-Sham system is introduced as a hypothetical reference "
+"system, and the wave functions of the KS system (Kohn-Sham orbitals) "
+":math:`\\psi_i` are used to calculate the kinetic energy term of the "
+"energy functional."
+
+#: ../../theory.rst:18
+msgid ""
+"& E[\\rho] = \\underset{\\mathrm{Kinetic}}{T[\\rho]} + "
+"\\underset{\\mathrm{External Potential}}{E_\\mathrm{ext}[\\rho]} + "
+"\\underset{\\mathrm{Hartree(Coulomb)}}{E_H[\\rho]} + "
+"\\underset{\\mathrm{Exchange Correlation}}{E_\\mathrm{XC}[\\rho]}\n"
+"\n"
+"& T_\\mathrm{KS}[\\rho] = "
+"-\\frac{1}{2}\\sum_{i}\\langle\\psi_i\\lvert\\nabla^2\\rvert\\psi_i\\rangle"
+msgstr ""
+
+#: ../../theory.rst:24
+msgid ""
+"KS軌道はKS方程式の固有関数であり、KS-DFTでは固有値問題を数値的に解く必要があります。これが原子数 :math:`N` に対し計算量が "
+":math:`O(N^3)` となり、「第一原理計算が重い」と言われる理由です。"
+msgstr ""
+"KS orbitals are eigenfunctions of the KS equation, and KS-DFT requires "
+"solving the eigenvalue problem numerically. This leads to a computational"
+" complexity of :math:`O(N^3)` with respect to the number of atoms "
+":math:`N` , which is why first-principles calculations are said to be "
+"\"heavy\"."
+
+#: ../../theory.rst:26
+msgid ""
+"これに対し、運動エネルギー汎関数の計算にKS軌道を使わず(Orbital-Free)、計算量を :math:`O(N)` に抑えよう"
+"、というのがOF-DFTの考え方です。元々のDFT(Hohenberg-Kohn DFT)に近いですが、運動エネルギー汎関数 "
+":math:`T[\\rho]` はKS-DFTと同様に相互作用のない参照系で定義します。"
+msgstr ""
+"In contrast, the concept of OF-DFT is to limit the computational "
+"complexity to :math:`O(N)` without using KS orbitals (Orbital-Free) for "
+"calculating the kinetic energy functional. Although it is similar to the "
+"original DFT (Hohenberg-Kohn DFT), the kinetic energy functional "
+":math:`T[\\rho]` is defined in a non-interacting reference system, just "
+"as in KS-DFT."
+
+#: ../../theory.rst:28
+msgid "KS-DFTとOF-DFT、および分子動力学で使われる力場法を比較します。"
+msgstr ""
+"We compare KS-DFT, OF-DFT, and force field methods used in molecular "
+"dynamics."
+
+#: ../../theory.rst:31
+msgid "KS-DFT"
+msgstr ""
+
+#: ../../theory.rst:31
+msgid "OF-DFT"
+msgstr ""
+
+#: ../../theory.rst:31
+msgid "力場法"
+msgstr "Force field methods"
+
+#: ../../theory.rst:33
+msgid "電子密度"
+msgstr "Charge density"
+
+#: ../../theory.rst:33 ../../theory.rst:35
+msgid "あり"
+msgstr "Yes"
+
+#: ../../theory.rst:33 ../../theory.rst:35
+msgid "なし"
+msgstr "No"
+
+#: ../../theory.rst:35
+msgid "軌道（波動関数）"
+msgstr "Orbitals (Wave functions)"
+
+#: ../../theory.rst:37
+msgid "計算精度"
+msgstr "Accuracy"
+
+#: ../../theory.rst:37
+msgid "高い"
+msgstr "High"
+
+#: ../../theory.rst:37
+msgid "汎関数に依存"
+msgstr "Depends on functional"
+
+#: ../../theory.rst:37
+msgid "力場に依存"
+msgstr "Depends on force field"
+
+#: ../../theory.rst:39
+msgid "計算コスト"
+msgstr "Computational cost"
+
+#: ../../theory.rst:39
+msgid ":math:`O(N^3)`"
+msgstr ""
+
+#: ../../theory.rst:39
+msgid ":math:`O(N)`"
+msgstr ""
+
+#: ../../theory.rst:41
+msgid "汎用性"
+msgstr "Versatility"
+
+#: ../../theory.rst:41
+msgid "全元素に適用可能"
+msgstr "Applicable to all elements"
+
+#: ../../theory.rst:41
+msgid "擬ポテンシャルが"
+msgstr "Applicable if"
+
+#: ../../theory.rst:42
+msgid "あれば適用可能"
+msgstr "pseudopotentials are available"
+
+#: ../../theory.rst:41
+msgid "特定の系に特化"
+msgstr "Specialized for specific systems"
+
+#: ../../theory.rst:42
+msgid "（機械学習力場等で改善）"
+msgstr "(Improved by machine learning force fields, etc.)"
+
+#: ../../theory.rst:45
+msgid ""
+"グラフニューラルネットワーク(GNN)力場などの機械学習力場と比較すると、OF-"
+"DFTは計算コストが同じでありながら、電子密度を明示的に扱うため、外部電場の印加や電子・ホールドープ、仕事関数等の計算ができるという長所があります。"
+msgstr ""
+"Compared to machine learning force fields such as Graph Neural Network "
+"(GNN) force fields, OF-DFT has the advantage that, while maintaining the "
+"same computational cost, it explicitly treats charge density. This allows"
+" for calculations involving the application of external electric fields, "
+"electron/hole doping, work functions, etc."
+
+#: ../../theory.rst:47
+msgid ""
+"OF-DFTの実用面での制約として、擬ポテンシャルが充実していないという問題があります。OF-"
+"DFTでは、波動関数に依存した非局所演算子が使用できないため、KS-"
+"DFT用のノルム保存擬ポテンシャルやウルトラソフト擬ポテンシャルは利用できません。局所項のみで構成された局所擬ポテンシャルを使う必要があり、現在Advance"
+"/OF-DFTではOptimized Effective Pseudo Potential(OEPP)を採用しています。今後KS-"
+"DFT用の擬ポテンシャルを元に有効擬ポテンシャルを構築する方法を実装する予定です。"
+msgstr ""
+"A practical limitation of OF-DFT is the limited availability of "
+"pseudopotentials. Since OF-DFT cannot utilize non-local operators that "
+"depend on wave functions, norm-conserving pseudopotentials and ultrasoft "
+"pseudopotentials for KS-DFT are not applicable. Local pseudopotentials "
+"consisting only of local terms must be used; currently, Advance/OF-DFT "
+"adopts the Optimized Effective Pseudo Potential (OEPP). We plan to "
+"implement a method to construct effective pseudopotentials based on those"
+" for KS-DFT in the future."
+
+#: ../../theory.rst:49
+msgid ""
+"Advance/OF-DFTは、PythonのOF-DFTパッケージであるDFTpyに汎関数を追加する形で実装しています。また、OF-"
+"DFTでは電子密度の高周波成分にノイズが入ることでSCFが安定しないという問題があり、電子密度の高周波成分を取り除く前処理を追加実装して安定化を図っています。"
+msgstr ""
+"Advance/OF-DFT is implemented by adding functionals to DFTpy, a Python "
+"OF-DFT package. Additionally, OF-DFT faces a problem where the SCF "
+"becomes unstable due to noise in the high-frequency components of the "
+"charge density. To address this, we have implemented an additional "
+"preprocessing step to remove these high-frequency components, aiming to "
+"stabilize the calculation."
+
+#: ../../theory.rst:54
+msgid "汎グラフ(Graphical)"
+msgstr "Graphical"
+
+#: ../../theory.rst:56
+#, python-brace-format
+msgid ""
+"Advance/OF-"
+"DFTの運動エネルギー汎関数であるAdvanceSoft25は機械学習汎関数です。連続的な場である電子密度に対し機械学習を行うには、特徴ベクトルをどのように抽出するかが問題になります。既報の研究では、座標"
+" :math:`\\mathbf{r}` "
+"における特徴ベクトルをあらかじめ定義しておくという方法を使っていますが、十分な精度や汎用性が担保できませんでした。"
+msgstr ""
+"AdvanceSoft25, the kinetic energy functional of Advance/OF-DFT, is a "
+"machine learning functional. To apply machine learning to the charge "
+"density, which is a continuous field function, the challenge lies in how "
+"to extract feature vectors. Previous studies have used a method of pre-"
+"defining feature vectors at coordinate :math:`\\mathbf{r}` , but "
+"sufficient accuracy and generality could not be guaranteed."
+
+#: ../../theory.rst:58
+msgid "機械学習力場の分野では、グラフ理論を応用して、隣接原子間の相互作用を模した学習可能な特徴ベクトルを使用するGNN力場が上手くいっています。グラフは離散的なノード・エッジから構成されますが、このような学習可能な特徴ベクトルを機械学習汎関数にも応用できないか、という考えから、グラフを連続多変数空間に拡張したものが汎グラフです。関数(Function)→汎関数(Functional)に倣い、グラフ(Graph)→汎グラフ(Graphical)として名付けています。"
+msgstr ""
+"In the area of machine learning force fields, GNN force fields have "
+"proven successful by applying graph theory and using learnable feature "
+"vectors that mimic interactions between adjacent atoms. While graphs "
+"consist of discrete nodes and edges, the concept of \"Graphical\" is an "
+"extension of graphs into a continuous multi-variable space, developed "
+"from the idea of applying such learnable feature vectors to machine "
+"learning functionals. It is named \"Graphical\" (from Graph), following "
+"the analogy of \"Functional\" (from Function)."
+
+#: ../../theory.rst:60
+#, python-brace-format
+msgid ""
+"まず、通常のグラフ上のグラフ畳み込みネットワーク(Graph Convolutional Network, GCN)から説明します。ノード "
+":math:`i, j, ...` と、それらを繋ぐエッジを考えます。各エッジにはノード間の繋がりを表す係数 :math:`a_{ij}` "
+"を設定します。各ノードに初期値（入力） :math:`h_i^0` を与え、この値（特徴量）を更新していくことを考えます。"
+msgstr ""
+"First, we explain the Graph Convolutional Network (GCN) on a standard "
+"graph. Consider nodes :math:`i, j, ...` and the edges connecting them. "
+"For each edge, a coefficient :math:`a_{ij}` representing the connectivity"
+" between nodes is assigned. We assign an initial value (input) "
+":math:`h_i^0` to each node and consider the process of updating this "
+"value (feature)."
+
+#: ../../theory.rst:62
+msgid "更新は、「隣接ノードの特徴量の集約」と「重みによる変換」の2段階で行います。"
+msgstr ""
+"The update is performed in two stages: 'aggregation of features from "
+"neighboring nodes' and 'transformation using weights'."
+
+#: ../../theory.rst:64
+#, python-brace-format
+msgid ""
+"& x_i^n = \\sum_j a_{ij} h_j^n\n"
+"\n"
+"& h_i^{n+1} = h_i^n + \\sigma(w^nx_i^n)"
+msgstr ""
+
+#: ../../theory.rst:70
+#, python-brace-format
+msgid ""
+":math:`\\sigma` は非線形な振る舞いを表現するために使われる活性化関数です。また、 :math:`h_i^{n+1}` を "
+":math:`h_i^n` に対する差分の形で更新する方法を残差接続と呼びます。"
+msgstr ""
+":math:`\\sigma` is an activation function used to represent nonlinear "
+"behavior. Additionally, the method of updating :math:`h_i^{n+1}` in the "
+"form of a difference from :math:`h_i^n` is called a residual connection."
+
+#: ../../theory.rst:72
+#, python-brace-format
+msgid ""
+"このままでは更新を繰り返しても特徴量を拡散させるフィルタのようにしか働きません。ここで、マルチチャンネル化を行います。特徴量をチャンネル数の次元を持つ特徴ベクトル"
+" :math:`\\mathbf{h}_i` にし、更新は重み行列 :math:`W` を使います。"
+msgstr ""
+"In this form, repeating the updates merely acts like a filter that "
+"diffuses the features. Therefore, we introduce a multi-channel approach. "
+"We convert the features into feature vectors :math:`\\mathbf{h}_i` with "
+"dimensions corresponding to the number of channels, and use a weight "
+"matrix :math:`W` for the updates."
+
+#: ../../theory.rst:74
+#, python-brace-format
+msgid "& \\mathbf{h}_i^{n+1} = \\mathbf{h}_i^n + \\sigma(W^n\\mathbf{x}_i^n)"
+msgstr ""
+
+#: ../../theory.rst:78
+msgid ""
+"特徴ベクトルの各チャンネルの混合を含めた処理が入り、この更新（畳み込み）を繰り返すことにより、複雑な処理を行えるようになります。最終的に目的の特徴ベクトル（出力）が得られるように"
+" :math:`W^n` を最適化するのが、GCNの学習ということになります。"
+msgstr ""
+"This introduces operations that mixes the channels of the feature "
+"vectors, and repeating this update (convolution) enables complex "
+"processing. Training the GCN consists of optimizing :math:`W^n` to "
+"ultimately obtain the desired feature vector (output)."
+
+#: ../../theory.rst:80
+msgid "次に、GCNを連続多変数空間上で定義された場に適用できるよう拡張することを考えます。"
+msgstr ""
+"Next, we consider extending the GCN so that it can be applied to fields "
+"defined on a continuous multi-variable space."
+
+#: ../../theory.rst:83
+msgid "グラフ"
+msgstr "Graph"
+
+#: ../../theory.rst:83
+msgid "汎グラフ"
+msgstr "Graphical"
+
+#: ../../theory.rst:85
+msgid "ノード :math:`i`"
+msgstr "Node :math:`i`"
+
+#: ../../theory.rst:85
+#, python-brace-format
+msgid "座標 :math:`\\mathbf{r}`"
+msgstr "Coordinate :math:`\\mathbf{r}`"
+
+#: ../../theory.rst:87
+msgid "エッジ :math:`ij`"
+msgstr "Edge :math:`ij`"
+
+#: ../../theory.rst:87
+#, python-brace-format
+msgid "座標の組 :math:`(\\mathbf{r}, \\mathbf{r}')`"
+msgstr "Pair of coordinates :math:`(\\mathbf{r}, \\mathbf{r}')`"
+
+#: ../../theory.rst:89
+#, python-brace-format
+msgid "特徴ベクトル :math:`\\mathbf{h}_i`"
+msgstr "Feature vector :math:`\\mathbf{h}_i`"
+
+#: ../../theory.rst:89
+#, python-brace-format
+msgid "場 :math:`\\mathbf{h}(\\mathbf{r})`"
+msgstr "Field :math:`\\mathbf{h}(\\mathbf{r})`"
+
+#: ../../theory.rst:91
+#, python-brace-format
+msgid "隣接行列 :math:`a_{ij}`"
+msgstr "Adjacency matrix :math:`a_{ij}`"
+
+#: ../../theory.rst:91
+#, python-brace-format
+msgid "隣接相関 :math:`a(\\mathbf{r}, \\mathbf{r}')`"
+msgstr "Adjacency correlation :math:`a(\\mathbf{r}, \\mathbf{r}')`"
+
+#: ../../theory.rst:93
+msgid "特徴量の集約"
+msgstr "Aggregation of features"
+
+#: ../../theory.rst:93
+msgid "隣接相関を積分核とする畳み込み積分"
+msgstr "Convolution integral using adjacency correlation as the integral kernel"
+
+#: ../../theory.rst:96
+msgid ""
+"隣接相関 :math:`a(\\mathbf{r}, \\mathbf{r}')` は定義上は :math:`\\mathbf{R} = "
+"\\mathbf{r} - \\mathbf{r}'` "
+"で非ゼロの値を持つデルタ関数になりますが、数値計算を行うために、動径方向に幅を持つガウス関数で置き換えます。角度方向には球対称とし、球平均を取って距離のみの関数にします。"
+msgstr ""
+"By definition, the adjacency correlation :math:`a(\\mathbf{r}, \\mathbf{r}')` "
+"is a delta function taking non-zero values at :math:`\\mathbf{R} = "
+"\\mathbf{r} - \\mathbf{r}'` ; however, for numerical calculations, we "
+"replace it with a Gaussian function having a width in the radial direction. "
+"We assume spherical symmetry in the angular direction and take a spherical "
+"average to make it a function of distance only."
+
+#: ../../theory.rst:98
+msgid ""
+"a(\\mathbf{r}, \\mathbf{r}') = a\\left(|\\mathbf{r} - "
+"\\mathbf{r}'|\\right) = \\int \\mathrm{d}\\Omega "
+"\\frac{1}{\\left(\\sqrt{2\\pi}\\kappa\\right)^3} "
+"\\exp\\left(-\\frac{|\\mathbf{r}-\\mathbf{r}'-\\mathbf{R}|^2}{2\\kappa^2}\\right)"
+msgstr ""
+
+#: ../../theory.rst:102
+#, python-brace-format
+msgid ""
+"半径 :math:`R` 、幅 :math:`\\kappa` がパラメータとなります。種々の :math:`\\{R_i, "
+"\\kappa_i\\}` 対に対する :math:`a_i\\left(|\\mathbf{r} - "
+"\\mathbf{r}'|\\right)` "
+"を使って特徴量を集約することで、空間全体をカバーするようなマルチチャンネル化を行ったことになります。畳み込み積分の距離を有限にするため、カットオフ関数"
+" :math:`f_i` を適用します。"
+msgstr ""
+"The radius :math:`R` and width :math:`\\kappa` serve as parameters. By "
+"aggregating features using :math:`a_i\\left(|\\mathbf{r} - "
+"\\mathbf{r}'|\\right)` for various pairs of :math:`\\{R_i, \\kappa_i\\}` , we "
+"effectively implement multi-channeling that covers the entire space. To "
+"limit the range of the convolution integral, we apply a cutoff function "
+":math:`f_i` ."
+
+#: ../../theory.rst:104
+msgid "最終的に、汎グラフのGCNは次のように定式化されます。"
+msgstr "Finally, the Graphical GCN is formulated as follows."
+
+#: ../../theory.rst:106
+#, python-brace-format
+msgid ""
+"& x_{\\mu i}^n(\\mathbf{r}) = f_i \\int \\mathrm{d}\\mathbf{r}' "
+"a_i(|\\mathbf{r} - \\mathbf{r}'|)h_\\mu^n(\\mathbf{r}')\n"
+"\n"
+"& h_\\nu^{n+1}(\\mathbf{r}) = h_\\nu^n(\\mathbf{r}) + "
+"\\sigma\\left(\\sum_{\\mu i}w_{\\nu,\\mu i}^n x_{\\mu "
+"i}^n(\\mathbf{r})\\right)"
+msgstr ""
+
+#: ../../theory.rst:112
+#, python-brace-format
+msgid ""
+":math:`\\mathbf{r}` が連続のままであることに注目してください。数値計算を行う上では離散的な "
+":math:`\\mathbf{r}` "
+"（メッシュ）を使いますが、汎グラフのGCNのパラメータはメッシュの細かさに依存しません。学習時と推論時でメッシュの細かさや形が異なっていても良く、transferabilityが高いのが特長です。"
+msgstr ""
+"Note that :math:`\\mathbf{r}` remains continuous. Although a discrete "
+":math:`\\mathbf{r}` (mesh) is used for numerical calculations, the "
+"parameters of the Graphical GCN are independent of the mesh resolution. The "
+"mesh resolution and shape can differ between training and inference, "
+"offering the advantage of high transferability."
+
+#: ../../theory.rst:116
+msgid "汎グラフを使った運動エネルギー汎関数AdvanceSoft25は図のようなアーキテクチャになります。汎グラフに入力する特徴ベクトルとしては、電子密度の勾配、ラプラシアン（＋オプションとして勾配とラプラシアンの積）を使います。"
+msgstr ""
+"The architecture of the kinetic energy functional AdvanceSoft25 using "
+"Graphical is as shown in the figure. The feature vectors input to Graphical "
+"are the gradient of the charge density and the Laplacian (plus, "
+"optionally, the product of the gradient and the Laplacian)."
+
+#: ../../theory.rst:118
+#, python-brace-format
+msgid ""
+"出力はThomas-Fermi(TF)モデルおよびvon Weizsäcker(vW)モデルで計算した運動エネルギー密度 "
+":math:`\\tau(\\mathbf{r})` に対する補強因子 "
+":math:`F^\\mathrm{NN}[\\rho](\\mathbf{r})` として使い、最終的な運動エネルギーを得ます。"
+msgstr ""
+"The output is used as an enhancement factor "
+":math:`F^\\mathrm{NN}[\\rho](\\mathbf{r})` for the kinetic energy density "
+":math:`\\tau(\\mathbf{r})` calculated using the Thomas-Fermi (TF) and von "
+"Weizsäcker (vW) models, to obtain the final kinetic energy."
+
+#: ../../theory.rst:120
+#, python-brace-format
+msgid ""
+"T_\\mathrm{AS25}[\\rho] = \\int \\mathrm{d}\\mathbf{r} "
+"\\lbrace\\tau^\\mathrm{TF}(\\mathbf{r})F_\\mathrm{TF}^\\mathrm{NN}[\\rho](\\mathbf{r})"
+" + "
+"\\tau^\\mathrm{vW}(\\mathbf{r})F_\\mathrm{vW}^\\mathrm{NN}[\\rho](\\mathbf{r})\\rbrace"
+msgstr ""
+
+#: ../../theory.rst:127
+msgid "局所密度行列汎関数理論(L-DMFT)"
+msgstr "Local Density Matrix Functional Theory (L-DMFT)"
+
+#: ../../theory.rst:129
+msgid ""
+"AdvanceSoft25を使ったSCF計算では、既存の機械学習汎関数に比べて電子密度の再現性が高いことが確認できたものの"
+"、原子核付近の記述の精度に問題があるというOF-"
+"DFT自体の問題は依然として存在し、特にイオン結晶のような電子が局在した系で誤差が大きくなってしまう問題があります。"
+msgstr ""
+"In SCF calculations using AdvanceSoft25, while it has been confirmed that the "
+"reproducibility of the charge density is higher compared to existing "
+"machine learning functionals, the inherent problem of OF-DFT regarding the "
+"accuracy of the description near atomic nuclei still remains. In particular, "
+"there is an issue where errors become significant in systems with localized "
+"electrons, such as ionic crystals."
+
+#: ../../theory.rst:131
+msgid ""
+"これに対し、原子ごとの局所的な密度行列は厳密に扱い、原子間は電子密度の汎関数で補完する局在密度行列汎関数理論(Localized Density "
+"Matrix Functional Theory, L-DMFT)を導入しました。"
+msgstr ""
+"To address this, we introduced Localized Density Matrix Functional Theory "
+"(L-DMFT), which rigorously treats the local density matrix of each atom "
+"while complementing the inter-atomic region with an charge density "
+"functional."
+
+#: ../../theory.rst:133
+msgid ""
+"局所的な波動関数としてはOpenMXの擬原子軌道(Pseudo Atomic Orbital, "
+"PAO)をそのまま使い、局所密度行列を最適化します。これにより、純粋なOF-"
+"DFTでは難しかったDFT+U（電子相関の補正）やスピン軌道相互作用といった、局所的な物理現象を扱えるようになります。"
+msgstr ""
+"We use Pseudo Atomic Orbitals (PAO) from OpenMX as-is for the local wave "
+"functions and optimize the local density matrix. This enables the handling "
+"of local physical phenomena such as DFT+U (correction for electron "
+"correlation) and spin-orbit coupling, which were difficult to achieve with "
+"pure OF-DFT."
+
