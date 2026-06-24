@@ -29,8 +29,8 @@ AOF-DFTの計算機能は、Pythonモジュール\ `ASE (Atomic Simulation Envir
  atoms.calc = AOFDFTCalculator(
      kin_type  = "AS26",
      kin_model = "Crystal26",
-     vps_dir   = "path/to/DFT_DATA19/VPS", # 実際の環境に合わせてpathを指定
-     pao_dir   = "path/to/DFT_DATA19/PAO", # 実際の環境に合わせてpathを指定
+     vps_dir   = "path/to/DFT_DATA19_AS/VPS", # 実際の環境に合わせてpathを指定
+     pao_dir   = "path/to/DFT_DATA19_AS/PAO", # 実際の環境に合わせてpathを指定
  )
 
  # Atomsオブジェクトのメソッドを呼び出すと計算が行われる
@@ -51,8 +51,8 @@ exapmles
   Si結晶のSCF計算により、トータルエネルギーと原子ごとの力を求めます。
  :file:`fe_spin.py`
   Fe結晶のSCF計算により、原子ごとのスピンを求めます。
- :file:`c2h6_relax.py`
-  孤立エタン分子の構造最適化計算およびポテンシャルエネルギー曲線の計算を実行します。
+ :file:`ch4_relax.py`
+  孤立メタン分子の構造最適化計算およびポテンシャルエネルギー曲線の計算を実行します。
  :file:`gaas_dope.py`
   As欠陥をもつGaAs結晶で、中性/電子ドープ時の原子ごとの電荷を計算し、Gaへのドープ電子の局在化の様子を調べます。
  :file:`band_gap.py`

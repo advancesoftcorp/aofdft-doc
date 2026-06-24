@@ -20,8 +20,8 @@ AOFDFTCalculator
  calculator = AOFDFTCalculator(
      kin_type  = "AS26",
      kin_model = "Crystal26",
-     vps_dir   = "path/to/DFT_DATA19/VPS", # 実際の環境に合わせてpathを指定
-     pao_dir   = "path/to/DFT_DATA19/PAO", # 実際の環境に合わせてpathを指定
+     vps_dir   = "path/to/DFT_DATA19_AS/VPS", # 実際の環境に合わせてpathを指定
+     pao_dir   = "path/to/DFT_DATA19_AS/PAO", # 実際の環境に合わせてpathを指定
      e_cut     = 150 * Hartree # ase.units.Hartreeで150 HartreeをeVに換算
  )
 
@@ -110,14 +110,14 @@ AOFDFTCalculator
 .. describe:: vps_dir
 
  :type: str
- :デフォルト: DFT_DATA19/VPS
+ :デフォルト: DFT_DATA19_AS/VPS
 
  擬ポテンシャル(VPS)ファイルのあるフォルダパスを指定します。
 
 .. describe:: pao_dir
 
  :type: str
- :デフォルト: DFT_DATA19/PAO
+ :デフォルト: DFT_DATA19_AS/PAO
 
  擬原子軌道(PAO)ファイルのあるフォルダパスを指定します。
 
